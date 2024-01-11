@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mengubah warna background scrollbar */
+::-webkit-scrollbar {
+  background-color: #686868;
+  width: 4px;
+}
+
+/* Mengubah warna thumb (bagian yang dapat digerakkan) scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #8C00CE;
+  width: 4px;
+}
+
+
+/* Mengubah ukuran scrollbar track (area yang tidak dapat digerakkan) */
+::-webkit-scrollbar-track {
+  background-color: #111111;
+  width: 4px;
+}
+
