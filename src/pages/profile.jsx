@@ -1,84 +1,94 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import CardSatu from '../components/cardprofil/CardSatu';
-import CardDua from '../components/cardprofil/CardDua';
-import CardTiga from '../components/cardprofil/CardTiga';
+import CardProfile from '../components/cardcontent/CardProfile';
+import ProfileImage from '../components/ProfileImage';
+import DocumentLink from '../components/DocumentLink';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
+  const images = [
+    '/assets/gallery1.jpg',
+    '/assets/gallery2.jpg',
+    '/assets/gallery3.jpg',
+    '/assets/gallery4.jpg',
+  ];
+  
   return (
     <div className="bg-[#111111] h-full text-white">
       <div className="fixed top-0 w-full">
-          <Navbar title='Salman Setiawan' subtitle='UI Designer' icon1='/assets/home.svg' icon2='/assets/person.svg' icon3='/assets/contact_page.svg' />
+        <Navbar 
+          url1='/collection'
+          icon1='/assets/home.svg'
+        />
       </div>
-      <div className="flex justify-center pt-20">
-        <div className="flex flex-col px-4 md:w-[720px] space-y-3">
-          <img src="/assets/avatar.png" alt="" className="sm:h-[240px] rounded-md object-cover" />
-          <CardSatu
-            title='About Me'
-            desc='An UI Designer with experience in conducting research, designing low-fidelity interfaces, developing design systems, creating hi-fidelity designs, and prototyping. My objective is to deliver exceptional user experiences by blending innovative design principles with a profound comprehension of user needs. With a solid foundation in visual design and interaction, my goal is to become a versatile designer with an agile mindset and a broad knowledge base in various technologies.'
-          />
-          <CardDua
-            title='My Skills'
-            chip1='User Interface Design'
-            chip2='User Experience Design'
-            chip3='Visual Communication'
-            chip4='Interaction Design'
-            bg1='[#006BCE]'
-            bg2='[#006BCE]'
-            bg3='[#006BCE]'
-            bg4='[#006BCE]'
-          />
-          <CardDua
-            title='Work Approach'
-            chip1='Systematic design'
-            chip2='Value right problem'
-            chip3='User-centered design'
-            chip4='Unique style'
-            bg1='[#006BCE]'
-            bg2='[#006BCE]'
-            bg3='[#006BCE]'
-            bg4='[#006BCE]'
-          />
-          <CardTiga
-            title='My Picture'
-            img='/assets/gallery1.jpg'
-          />
-          <CardDua
-            title='Tools I Used'
-            chip1='Figma'
-            chip2='Notion'
-            bg1='[#006BCE]'
-            bg2='[#006BCE]'
-          />
-          <div className="flex flex-col p-4 bg-[#252525] rounded-lg">
-            <div className="text-white space-y-2">
-              <p className="font-medium text-lg">
-                My Music
-              </p>
-              <iframe
-                style={{ borderRadius: '12px' }}
-                src="https://open.spotify.com/embed/playlist/5fplYr3ZzQv9lvXfIrENAz?utm_source=generator&theme=0"
-                width="100%"
-                height="352"
-                frameBorder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+      <div className="flex justify-center md:items-center max-h-screen md:min-h-screen pt-20 pb-4">
+        <div className="flex flex-col items-center px-4 md:w-[1200px] overflow-y-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-10">
+            <div className="flex flex-col space-y-6">
+              <ProfileImage
+                images={images}
+              />
+              <CardProfile
+                title='About Me'
+                desc='An UI Designer with experience in conducting research, designing low-fidelity interfaces, developing design systems, creating hi-fidelity designs, and prototyping. My objective is to deliver exceptional user experiences by blending innovative design principles with a profound comprehension of user needs. With a solid foundation in visual design and interaction, my goal is to become a versatile designer with an agile mindset and a broad knowledge base in various technologies.'
+              />
+            </div>
+            <div className="flex flex-col space-y-6">
+              <CardProfile
+                title='My Skills'
+                chip1='User Interface Design'
+                chip2='User Experience Design'
+                chip3='Visual Communication'
+                chip4='Interaction Design'
+                bg1='bg-[#8C00CE]'
+                bg2='bg-[#8C00CE]'
+                bg3='bg-[#8C00CE]'
+                bg4='bg-[#8C00CE]'
+              />
+              <CardProfile
+                title='Work Approach'
+                chip1='Systematic design'
+                chip2='Value right problem'
+                chip3='User-centered design'
+                chip4='Unique style'
+                chip5='Agile Thinking'
+                bg1='bg-[#8C00CE]'
+                bg2='bg-[#8C00CE]'
+                bg3='bg-[#8C00CE]'
+                bg4='bg-[#8C00CE]'
+                bg5='bg-[#8C00CE]'
+              />
+              <CardProfile
+                title='Tools I Used'
+                chip1='Figma'
+                chip2='Notion'
+                chip3='Framer'
+                bg1='bg-[#8C00CE]'
+                bg2='bg-[#8C00CE]'
+                bg3='bg-[#8C00CE]'
+              />
+            </div>
+            <div className="flex flex-col space-y-6">
+              <CardProfile
+                desc='I can assist you in designing the user experience, interface, and interactions for the platform/application you desire. Please contact me via the email below.'
+              />
+              <Link to='mailto:salmansetiawan88@gmail.com' target="_blank" rel="noopener noreferrer" className='w-fit'>      
+                <p className="text-[14px] font-semibold underline underline-offset-2">salmansetiawan88@gmail.com</p>
+              </Link>
+              <CardProfile
+                desc='Or you can reach out to my social media for a more informal discussion.'
+              />
+              <div className="flex flex-col space-y-1">
+                <Link to='https://www.linkedin.com/in/salman-setiawan/' target="_blank" rel="noopener noreferrer" className='w-fit'>      
+                  <p className="text-[14px] font-semibold underline underline-offset-2">Linkedin</p>
+                </Link>
+                <Link to='https://www.instagram.com/eisenflux/' target="_blank" rel="noopener noreferrer" className='w-fit'>      
+                  <p className="text-[14px] font-semibold underline underline-offset-2">Instagram</p>
+                </Link>
+              </div>
             </div>
           </div>
-          <CardDua
-            title='Contact'
-            chip1='LinkedIn'
-            chip2='Instagram'
-            bg1='[#006BCE]'
-            bg2='[#006BCE]'
-          />
-            <div className="bottom-0 w-full">
-              <div className="flex justify-center pt-2 bg-[#111111] bg-opacity-90">
-                  <p className="text-[10px] text-[#9F9F9F] mb-4">copyright @ 2024</p>
-              </div>
-          </div>
+          <div className="pb-1"></div>
         </div>
       </div>
     </div>

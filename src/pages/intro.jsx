@@ -3,25 +3,37 @@ import React, { useEffect } from 'react';
 const IntroPages = () => {
   useEffect(() => {
     const handlePageClick = () => {
-      // Ganti "/tujuan" dengan URL tujuanmu
-      // redirectToPage('/collection');
       window.location.href = "/collection";
     };
 
-    // Menambahkan event listener untuk mendeteksi klik di mana saja pada halaman
     document.addEventListener('click', handlePageClick);
 
-    // Membersihkan event listener saat komponen unmount
     return () => {
       document.removeEventListener('click', handlePageClick);
     };
-  }, []); // Efek hanya dijalankan sekali setelah komponen dipasang
+  });
 
   return (
-    <div className="bg-[#111111] min-h-screen flex justify-center items-center px-16 text-white">
-      <div className='text-lg space-y-4 md:w-[720px]'>
-        <p>Hello, my name is Salman, and I have experience in designing user experience, user interfaces, interaction design, design systems, and much more.</p>
-        <p>Click anywhere to explore.</p>
+    <div className="bg-[#111111] min-h-screen flex flex-col justify-center items-center px-8 text-white">
+      <div className='text-[14px] space-y-16 md:w-[700px]'>
+        <div className="space-y-8">
+          <img src="/assets/mark.png" alt="" className="h-40" />
+          <div className="space-y-1">
+            <div className="flex space-x-2">
+              <p>&lt;al1p&gt;</p>
+              <p>Hello there, my name is Salman.</p>
+            </div>
+            <div className="flex space-x-2">
+              <p>&lt;al1p&gt;</p>
+              <p>I have experience in designing user experience, user interfaces, interaction design, design systems, and much more.</p>
+            </div>
+            <div className="flex space-x-2">
+              <p>&lt;al1p&gt;</p>
+              <p>I hope you enjoy your time exploring the portfolio I have created.</p>
+            </div>
+          </div>
+          <p className='blinking-text'>Click anywhere to continue.</p>
+          </div>
       </div>
     </div>
   );

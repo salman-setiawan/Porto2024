@@ -8,10 +8,10 @@ const Tabs = () => {
   };
 
   return (
-    <div className='px-4 pb-10 w-full md:w-[720px]'>
-      <div className="flex justify-between p-1.5 bg-[#252525] rounded-lg space-x-2">
+    <div className='px-4 pb-10 w-full md:w-[540px]'>
+      <div className="flex justify-between p-1.5 bg-[#252525] rounded-lg space-x-2 font-semibold">
         <p
-          className={`w-full flex justify-center py-2 px-4 rounded-lg text-[14px] ${
+          className={`w-full flex justify-center py-2 px-4 rounded-lg text-[12px] ${
             activeTab === 'Works' ? 'bg-[#494949]' : 'bg-[#252525]'
           }`}
           onClick={() => handleTabClick('Works')}
@@ -19,7 +19,7 @@ const Tabs = () => {
           Works
         </p>
         <p
-          className={`w-full flex justify-center py-2 px-4 rounded-lg text-[14px] ${
+          className={`w-full flex justify-center py-2 px-4 rounded-lg text-[12px] ${
             activeTab === 'Crafts' ? 'bg-[#494949]' : 'bg-[#252525]'
           }`}
           onClick={() => handleTabClick('Crafts')}
