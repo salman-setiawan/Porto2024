@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-const Tabs = () => {
+const Tabs = ({ onTabChange }) => {
   const [activeTab, setActiveTab] = useState('Works');
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
+    onTabChange(tab);
   };
 
   return (

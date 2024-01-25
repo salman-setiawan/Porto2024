@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/ShowcaseCollection';
 import Tabs from '../components/Tabs';
 
 const CollectionPages = () => {
+	const [activeTab, setActiveTab] = useState('Works');
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">
 			<div className='flex none'>
@@ -15,11 +20,16 @@ const CollectionPages = () => {
 				</div>
 			</div>
 			<div className="fixed bottom-0 w-full flex items-center pb-24 2xl:pb-28">
-				<Showcase />
+				{activeTab === 'Works' && (
+          <Showcase.Works />
+        )}
+        {activeTab === 'Crafts' && (
+          <Showcase.Crafts />
+        )}
 			</div>
 			<div className="fixed bottom-0 w-full flex flex-col none">
 				<div className="flex justify-center">
-					<Tabs />
+					<Tabs onTabChange={handleTabChange} />
 				</div>
 				<div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
 					<div className="flex justify-center pt-2 bg-[#111111] bg-opacity-90">

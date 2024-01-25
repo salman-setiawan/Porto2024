@@ -15,6 +15,9 @@ import NotFound from './pages/notfound';
 import MobtoonArticle from './pages/content/mobtoonarticle';
 import MobtoonGallery from './pages/content/mobtoongallery';
 import NoContent from './pages/nocontent';
+import EduworkGallery from './pages/content/eduworkgallery';
+import DekatGallery from './pages/content/dekatgallery';
+import EdufamsGallery from './pages/content/edufamsgallery';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +47,18 @@ const router = createBrowserRouter([
   {
     path: "/content/anotherisland/galleryview",
     element: <AnotherIslandGallery />,
+  },
+  {
+    path: "/content/eduwork/galleryview",
+    element: <EduworkGallery />,
+  },
+  {
+    path: "/content/dekat/galleryview",
+    element: <DekatGallery />,
+  },
+  {
+    path: "/content/edufams/galleryview",
+    element: <EdufamsGallery />,
   },
   {
     path: "*",

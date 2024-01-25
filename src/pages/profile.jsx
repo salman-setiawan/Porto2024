@@ -11,6 +11,7 @@ const Profile = () => {
     '/assets/gallery2.jpg',
     '/assets/gallery3.jpg',
     '/assets/gallery4.jpg',
+    '/assets/gallery5.jpg',
   ];
   
   return (
