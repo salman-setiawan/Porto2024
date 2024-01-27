@@ -52,19 +52,19 @@ const EdufamsGallery = () => {
             <div className="pb-4"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 px-4">
-          <img src="/assets/edufams/gallery/screen12.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen13.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen14.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen15.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen16.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen17.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen18.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen19.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen20.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen21.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen22.png" alt="" className="" />
-          <img src="/assets/edufams/gallery/screen23.png" alt="" className="" />
-        </div>
+            <img src="/assets/edufams/gallery/screen12.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen13.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen14.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen15.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen16.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen17.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen18.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen19.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen20.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen21.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen22.png" alt="" className="" />
+            <img src="/assets/edufams/gallery/screen23.png" alt="" className="" />
+          </div>
         </div>
       </div>
       <FAB
