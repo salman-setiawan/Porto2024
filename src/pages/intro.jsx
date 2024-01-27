@@ -19,18 +19,9 @@ const IntroPages = () => {
         <div className="space-y-8">
           <img src="/assets/mark.png" alt="" className="h-[100px]" />
           <div className="space-y-1">
-            <div className="flex space-x-2">
-              {/* <p>&lt;al1p&gt;</p> */}
               <p>Hello there, my name is Salman.</p>
-            </div>
-            <div className="flex space-x-2">
-              {/* <p>&lt;al1p&gt;</p> */}
               <p>I have experience in designing user experience, user interfaces, interaction design, design systems, and much more.</p>
-            </div>
-            <div className="flex space-x-2">
-              {/* <p>&lt;al1p&gt;</p> */}
               <p>I hope you enjoy your time exploring the portfolio I have created.</p>
-            </div>
           </div>
           <p className='blinking-text'>Click anywhere to continue.</p>
           </div>
