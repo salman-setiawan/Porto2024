@@ -3,7 +3,9 @@ import Navbar from '../../components/Navbar'
 import Paragraph from '../../components/Paragraph'
 import CardStandard from '../../components/cardcontent/CardStandard'
 import FAB from '../../components/FloatButton'
-import CardEvaluation from '../../components/cardcontent/CardEvaluation'
+import Quote from '../../components/Quote'
+import CTAGallery from '../../components/CTAGallery'
+import DocumentLink from '../../components/DocumentLink'
 
 const EdufamsArticle = () => {
   return (
@@ -14,126 +16,146 @@ const EdufamsArticle = () => {
           icon1='/assets/home.svg'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-20 pb-8">
+      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
-            desc1='Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.'
-            disclaimer='The images used on this website are for illustrative purposes only. All images used are the property of their respective owners.'
+            desc1='Berikut adalah hasil proyek saya selama mengikuti kegiatan magang sebagai UI/UX Designer di PT. Media Kreasi Abadi (MKA). MKA sendiri merupakan sebuah perusahaan yang bergerak pada industri kreatif seperti pengembang aplikasi dan permainan yang berlokasi di Balikpapan, Kalimantan Timur.'
+            disclaimer='Proyek ini merupakan bagian dari program Magang Bersertifikat yang diselenggarakan oleh Kampus Merdeka dari Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia. EduFams sendiri merupakan proyek kolaboratif bersama beberapa mahasiswa, proyek ini juga dibantu Product Manager dan Mentor UI/UX selaku pembimbing lapangan.'
           />
           <Paragraph 
-            title="What's User Think"
-            desc1='Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.'
-            desc2='In this case, I conducted user persona research through random interviews with three of my friends, and then summarized their opinions into key points as references in designing the application.'
-            desc3='Here are their opinions on their experiences in reading manhwa so far'
+            title="Work Process."
+            desc1='Selama magang saya bersama 3 anggota dengan role yang berbeda membentuk sebuah tim dan diberikan tantangan untuk membuat suatu Startup yang bertujuan untuk memecahkan masalah sosial dan lingkungan di Indonesia khususnya daerah Kalimantan Timur.'
           />
-          <div className="grid grid-cols-3 gap-2 items-center">
-            <CardStandard
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              title2='Goals'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Pain Points'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
-            />
+          <img src="/assets/edufams/article/team.jpg" alt="" className="" />
+          <Paragraph
+            desc2='Proses yang saya lalui bersama anggota tim pada program ini adalah mempelajari materi dan keterampilan yang diperlukan untuk membangun Startup yang baik dan benar, seperti Teamwork, Brainstorming, Research, serta membangun Startup. Semua tahapan ini dipandu oleh seorang mentor sekaligus product manager setiap minggunya untuk melaporkan progress yang sudah dikerjakan dengan pedekatan metode agile Kanban.'
+          />
+          <img src="/assets/edufams/article/system.png" alt="" className="" />
+          <Paragraph
+            desc3='Jobdesk saya selaku UI/UX Designer yaitu dengan melakukan perancangan dengan pendekatan Design Thinking dalam pemecahan masalah, seperti Emphatize, Define, Ideate, Prototyping, dan Design. Setelah tahap Design Thinking selesai, kemudian dilanjutkan dengan tahap Pitching sebagai hasil dari proses pembuatan startup yang dibangun selama masa magang.'
+          />
+          <Paragraph 
+            title="Emphatize."
+            desc1="Tahap ini saya bersama tim melakukan pencarian suatu permasalahan berdasarkan tema yang didapat dengan melakukan observasi dengan data yang didapat dari internet, selama proses observasi kami mendapatkan permasalahan yang kami jabarkan sebagai berikut ini."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             <CardStandard 
-              avatar='/assets/avatar.png' 
-              title1='Zulfikar Badarudin'
-              desc1='Mahasiswa'
-              title2='Goals'
-              desc2='Saya membaca manhwa biasanya untuk mengisi waktu kosong, untuk tampilan sendiri saya suka yang minimalis dan mudah digunakan.'
-              title3='Pain Points'
-              desc3='Terkadang beberapa penyedia bacaan memiliki flow yang aneh saat membuka manhwa, bisa saja langsung menampilkan chapter (2 langkah: membuka manhwa, memilih chapter) atau memerlukan langkah tambahan (3 langkah: membuka manhwa, mengakses daftar chapter, memilih chapter). Kemudian banyak popup iklan dan bagian yang tidak diperlukan.'
+              title1='Problem 1'
+              desc1='Selama pandemi covid-19 membuat anak-anak di Indonesia lebih banyak menghabiskan waktunya dirumah dengan gadget untuk bermain dan bersosialisasi. Berdasarkan data Badan Pusat Statistik tahun 2021 sebanyak 88,99% anak berumur 5 tahun ke atas sudah mengakses internet 
+              seperti sosial media dan 63,08% untuk hiburan seperti game. Hal ini bisa
+              menyebabkan terjadinya kecanduan gadget pada anak jika tidak ditangani 
+              dengan tepat.'
             />
+            <div className="flex flex-col space-y-2">
+              <CardStandard  
+                title1='Problem 2'
+                desc1='Selama pandemi covid-19 berdasarkan Komnas Perempuan tahun 2022 
+                sebanyak 64.211 kasus dispensasi pernikahan anak terjadi selama tahun 
+                2011 yang mana meningkat 3 kali lipat dari tahun sebelumnya yang hanya 
+                sebesar 23.126 kasus. Yang menyebabkan urgensi kebutuhan edukasi 
+                parenting sangatlah tinggi.'
+              />
+              <CardStandard  
+                title1='Problem 3'
+                desc1='Berdasarkan hasil wawancara dengan seorang ibu berumur 43 tahun. 
+                Dapat disimpulkan bahwa selama pandemi covid-19 banyak pekerja yang 
+                terkena PHK menyebabkan keruntuhan ekonomi bagi keluarga menengah 
+                kebawah, dalam hal ini untuk membeli kebutuhan anak dan keluarga 
+                menjadi hal yang sulit untuk dilakukan.'
+              />
+            </div>
+          </div>
+          <Paragraph
+            title='Define.' 
+            desc1='Dari permasalahan yang sudah didapatkan pada tahap emphatize selanjutnya dilakukan Analisa untuk menentukan pernyataan masalah pada penelitian. Adapun pernyataan yang didapat adalah sebagai berikut.'
+          />
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
             <CardStandard 
-              avatar='/assets/avatar.png' 
-              title1='Riski Kurniawan'
-              desc1='Karyawan Swasta'
-              title2='Goals'
-              desc2='Saya ingin mencari dan membaca manhwa secara cepat dan mudah.'
-              title3='Pain Points'
-              desc3='Karena biasanya saya hanya membaca, saya ingin melakukannya tanpa harus melakukan registrasi atau autentikasi akun terlebih dahulu.'
+              title1='Opinion 1'
+              desc1=' Anak beresiko mengalami kecanduan gadget jika tidak diberikan edukasi parenting.'
+            />
+            <CardStandard  
+              title1='Opinion 2'
+              desc1='Perlunya edukasi parenting untuk orang tua khususnya pasangan usia anak.'
+            />
+            <CardStandard  
+              title1='Opinion 3'
+              desc1='anyak keluarga yang membutuhkan dana untuk kebutuhan hidup.'
             />
           </div>
-          <Paragraph 
-            title="Here's The Idea"
-            desc1="I am designing a brand called 'mobtoon', which is short for mobile cartoon. mobtoon is a mobile-based application for reading web comic. In this design, my objective is to create an engaging and intuitive user interface for its users."
+          <Paragraph
+            title='Ideate.' 
+            desc1='Setelah menentukan pernyataan masalah pada penelitian, selanjutnya dilakukan proses brainstorming dengan mencari gagasan atau ide sebagai solusi dari masalah yang ada. Adapun solusi yang didapat adalah sebagai berikut.'
           />
-          <img src="/assets/mobtoon/content1.png" alt="" className="" />
-          <Paragraph 
-            desc2='I started by seeking inspiration and references through a moodboard. I leverage this to determine a comfortable user experience while using the application.'
-            desc3="For the brand's color, I chose green because it has a psychologically calming and refreshing effect. The use of green in design can help create a more serene atmosphere, reduce stress, and enhance the reading."
-            desc4="Lastly, to aid the reading experience, a font with good readability is necessary. Therefore, I chose the 'Plus Jakarta Sans' font, which has a modern look."
+          <Quote 
+            text='Membuat sebuah platform edukasi keluarga untuk memberikan edukasi parenting lewat media informasi seperti artikel dan video, maupun kelas dan pelatihan. Dan juga sekaligus memberi fasilitas berupa layanan donasi untuk membantu meringankan keluarga dengan ekonomi menengah kebawah dalam memenuhi kebutuhannya saat ini.'
           />
-          <div className="flex justify-center w-full py-2.5 px-3 bg-violet-500 bg-opacity-10">
-            <p className="text-white text-[14px] font-semibold">
-              To view the results of the UI mockup I created, you can access them in gallery design.
-            </p>
+          <Paragraph
+            desc1='Solusi berhasil didapatkan kemudian lanjut ke proses perencanaan dengan membuat information architecture yang disajikan dalam bentuk mind map untuk menjabarkan apa saja informasi yang diperlukan untuk mewujudkan solusi tersebut. Berikut adalah tangkapan layar dari mind map dengan menggunakan aplikasi berbasis website Miro.'
+          />
+          <img src="/assets/edufams/article/brand.png" alt="" className="" />
+          <Paragraph 
+            desc1='Platform edukasi keluarga EduFams dibuat sebagai solusi masalah bagi keluarga yang membutuhkan edukasi dan informasi seputar keluarga yang harmonis dan baik.'
+            desc2='Fitur utama yang ditawarkan antara lain media informasi berupa artikel maupun video mengenai informasi seputar keluarga seperti parenting anak, gejala atau sindrom yang terjadi pada anak, dan lain sebagainya.'
+            desc3='Platform ini juga menyediakan kelas dan pelatihan terkait keluarga dalam berbentuk video maupun teks yang bisa diakses kapan saja. Ditambah fitur berbayar seperti konseling via group chat untuk membantu pengguna lebih memahami kelas yang diikuti.'
+            desc4='Terakhir ada fitur donasi dengan topik seputar dunia keluarga untuk pengguna dari keluarga yang kekurangan secara finansial.'
+          />
+          <Paragraph
+            title='Prototype.' 
+            desc1='Pada tahap ini proses merancang platform edukasi keluarga EduFams dimulai, mulai dari desain wireframe sebagai rancangan awal, pembuatan design system, pembuatan mockup design dari penggabungan wireframe dan design system, terakhir proses prototyping agar mockup dapat berinteraksi. Proses ini sepenuhnya dikerjakan pada aplikasi Figma. Adapun proses tersebut dijabarkan sebagai berikut ini.'
+            desc2='Proses dimulai dengan merancang wireframe dari fitur dan komponen sesuai dengan hasil planningyang sudah ditentukan. Adapun desain yang dibuat meliputi dua aplikasi yakni aplikasi berbasis website dan aplikasi berbasis mobile.'
+          />
+          <div className="flex flex-col space-y-2">
+            <img src="/assets/edufams/article/wire1.png" alt="" className="" />
+            <img src="/assets/edufams/article/wire2.png" alt="" className="" />
+          </div>
+          <Paragraph
+            desc1='Selanjutnya merancang Design System yang bertujuan untuk mengelola seluruh elemen desain yang ada pada aplikasi EduFams sehingga terlihat lebih konsisten dan terstruktur. Proses perancangan Design System EduFams terbagi menjadi dua hal, styleguide dan component library. Berikut Hasilnya.'
+          />
+          <div className="flex flex-col space-y-2">
+            <img src="/assets/edufams/article/styleguide.png" alt="" className="" />
+            <img src="/assets/edufams/article/component.jpg" alt="" className="" />
+          </div>
+          <Paragraph
+            desc1='Selanjutnya saya mulai memadukan rancangan awal pada tahap sebelumnya dengan panduan dari design system untuk menciptakan desain mockup yang menarik, berwarna, dan seragam.'
+          />
+          <div className="w-full">
+            <CTAGallery />
+          </div>
+          <Paragraph
+            title='Test.' 
+            desc1='Setelah menyelesaikan seluruh desain pada tahap prototype, masuk ke tahap terakhir dalam design thinking. Disini mentor ui/ux selaku pengguna mencoba prototype yang sudah dipersiapkan. Adapun beberapa feedback yang didapat saat melakukan testing dijabarkan sebagai berikut.'
+          />
+          <div className="flex flex-col space-y-2 w-full">
+            <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
+                <DocumentLink
+                  url='https://s.itk.ac.id/gddaip'
+                  icon='/assets/document.svg'
+                  text='Game Design Document'
+                />
+              </div>
+              <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
+                <DocumentLink
+                  url='https://s.itk.ac.id/gddaip'
+                  icon='/assets/document.svg'
+                  text='Game Design Document'
+                />
+              </div>
           </div>
           <Paragraph 
-            title="Feedback"
-            desc1='Before initiating the application design process, as the designer, I conducted research by interviewing several individuals (in this case, readers of manhwa) to understand their experiences as users while reading manhwa on websites or mobile applications.'
-            desc2='In this case, I conducted Moderated Usability Testing dengan tujuan mengumpulkan feedback dan observasi langsung dari pengguna saat mereka berinteraksi dengan produk atau sistem. Disini seorang moderator memandu pengguna melalui tugas-tugas tertentu, sementara mengamati dan mencatat respon mereka. Adapun metrics yang dinilai adalah waktu yang diperlukan untuk menyelesaikan tugas, tingkat keberhasilan, jumlah kesalahan, dan kepuasan pengguna.'
+            desc1='Setelah menyelesaikan seluruh desain pada tahap prototype, masuk ke tahap terakhir dalam design thinking. Disini mentor ui/ux selaku pengguna mencoba prototype yang sudah dipersiapkan. Adapun beberapa feedback yang didapat saat melakukan testing dijabarkan sebagai berikut.'
           />
-          <div className="grid grid-cols-2 gap-2 items-center">
-            <CardEvaluation
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              metric1='Task Complete'
-              result1='5 out of 6'
-              metric2='Estimated Time'
-              result2='10 minutes'
-              title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Feedback'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
-            />
-            <CardEvaluation
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              metric1='Task Complete'
-              result1='5 out of 6'
-              metric2='Estimated Time'
-              result2='10 minutes'
-              title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Feedback'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
-            />
-            <CardEvaluation
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              metric1='Task Complete'
-              result1='5 out of 6'
-              metric2='Estimated Time'
-              result2='10 minutes'
-              title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Feedback'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
-            />
-            <CardEvaluation
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              metric1='Task Complete'
-              result1='5 out of 6'
-              metric2='Estimated Time'
-              result2='10 minutes'
-              title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Feedback'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
-            />
-          </div>
-          <div className="pb-1"></div>
+           <Quote 
+            text='Margin horizontal pada aplikasi berbasis mobile masih terlalu kecil, sehingga dilakukan penambahan ukuran margin yang sebelumnya 16px menjadi 24px agar terlihat lebih lapang seperti pada gambar dibawah.'
+          />
+          <Quote 
+            text='Pada halaman dashboard utama untuk aplikasi berbasis web desain yang ditawarkan terlalu sepi, sehingga diberikan peningkatan dengan menambahkan card pada tiap komponennya serta menambah satu level pada warna latar belakang seperti pada gambar dibawah.'
+          />
+          <div className="pb-8"></div>
         </div>
       </div>
       <FAB
-        url='/content/mobtoon/galleryview'
+        url='/content/edufams/galleryview'
         text='See Gallery Design'
       />
       <div className="fixed bottom-0 w-full">

@@ -28,8 +28,6 @@ const CardProfile = ({title, desc, img, chip1, chip2, chip3, chip4, chip5, bg1, 
           <img src={img} alt="" className="rounded-md w-full h-52 object-cover" />
         }
       </div>
-      {/* <div className="flex flex-col p-4 bg-[#252525] rounded-lg">
-      </div> */}
     </div>
   )
 }

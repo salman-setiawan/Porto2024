@@ -11,7 +11,7 @@ const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
               {title}
             </p>
             <div className="">
-              <ChipShowcase text={chipdesc} bg='bg-[#8C00CE]' />
+              <ChipShowcase text={chipdesc} bg='bg-[#30FFFC]' />
             </div>
           </div>
           <div className='text-[#9F9F9F] text-[12px]'>
@@ -31,7 +31,7 @@ const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
               <p>{desc2}</p>
           </div>
           </div>
-          <ChipShowcase text={chipdesc} bg='bg-[#8C00CE]' />
+          <ChipShowcase text={chipdesc} bg='bg-[#30FFFC]' />
         </div>
       </div>
     </div>

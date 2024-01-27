@@ -41,10 +41,10 @@ const Profile = () => {
                 chip2='User Experience Design'
                 chip3='Visual Communication'
                 chip4='Interaction Design'
-                bg1='bg-[#8C00CE]'
-                bg2='bg-[#8C00CE]'
-                bg3='bg-[#8C00CE]'
-                bg4='bg-[#8C00CE]'
+                bg1='bg-[#30FFFC]'
+                bg2='bg-[#30FFFC]'
+                bg3='bg-[#30FFFC]'
+                bg4='bg-[#30FFFC]'
               />
               <CardProfile
                 title='Work Approach'
@@ -53,20 +53,20 @@ const Profile = () => {
                 chip3='User-centered design'
                 chip4='Unique style'
                 chip5='Agile Thinking'
-                bg1='bg-[#8C00CE]'
-                bg2='bg-[#8C00CE]'
-                bg3='bg-[#8C00CE]'
-                bg4='bg-[#8C00CE]'
-                bg5='bg-[#8C00CE]'
+                bg1='bg-[#30FFFC]'
+                bg2='bg-[#30FFFC]'
+                bg3='bg-[#30FFFC]'
+                bg4='bg-[#30FFFC]'
+                bg5='bg-[#30FFFC]'
               />
               <CardProfile
                 title='Tools I Used'
                 chip1='Figma'
                 chip2='Notion'
                 chip3='Framer'
-                bg1='bg-[#8C00CE]'
-                bg2='bg-[#8C00CE]'
-                bg3='bg-[#8C00CE]'
+                bg1='bg-[#30FFFC]'
+                bg2='bg-[#30FFFC]'
+                bg3='bg-[#30FFFC]'
               />
             </div>
             <div className="flex flex-col space-y-6">

@@ -10,7 +10,7 @@
 
 /* Mengubah warna thumb (bagian yang dapat digerakkan) scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #8C00CE;
+  background-color: #5454FF;
   width: 4px;
 }
 

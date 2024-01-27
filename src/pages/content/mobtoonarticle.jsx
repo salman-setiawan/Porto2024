@@ -4,6 +4,7 @@ import Paragraph from '../../components/Paragraph'
 import CardStandard from '../../components/cardcontent/CardStandard'
 import FAB from '../../components/FloatButton'
 import CardEvaluation from '../../components/cardcontent/CardEvaluation'
+import CTAGallery from '../../components/CTAGallery'
 
 const MobtoonArticle = () => {
   return (
@@ -14,7 +15,7 @@ const MobtoonArticle = () => {
           icon1='/assets/home.svg'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-20 pb-8">
+      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1='Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.'
@@ -65,10 +66,8 @@ const MobtoonArticle = () => {
             desc3="For the brand's color, I chose green because it has a psychologically calming and refreshing effect. The use of green in design can help create a more serene atmosphere, reduce stress, and enhance the reading."
             desc4="Lastly, to aid the reading experience, a font with good readability is necessary. Therefore, I chose the 'Plus Jakarta Sans' font, which has a modern look."
           />
-          <div className="flex justify-center w-full py-2.5 px-3 bg-violet-500 bg-opacity-10">
-            <p className="text-white text-[14px] font-semibold">
-              To view the results of the UI mockup I created, you can access them in gallery design.
-            </p>
+          <div className="w-full">
+            <CTAGallery />
           </div>
           <Paragraph 
             title="Feedback"

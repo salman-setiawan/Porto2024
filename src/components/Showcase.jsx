@@ -33,7 +33,7 @@ const Works = () => {
         </Link>
       </SwiperSlide> */}
       <SwiperSlide>
-        <Link to="/content/edufams/galleryview" className='space-y-8'>
+        <Link to="/content/edufams/articleview" className='space-y-8'>
           <ImageSlide img='/assets/craft7.png' />
           <ImageLabel title='EduFams' desc1='PT. Media Kreasi Abadi (Internship)' desc2='Personal Works' chipdesc='With UX Case' />
         </Link>

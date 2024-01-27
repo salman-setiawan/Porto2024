@@ -19,7 +19,7 @@ const Navbar = ({ title, subtitle, url1, url2, url4, icon1, icon2, icon3, icon4 
       <div className="flex">
         <Link to={url1}>
           {icon1 &&           
-            <button className="p-2 bg-[#494949] rounded-md">
+            <button className="p-2 bg-[#2b2b45] rounded-md">
               <img src={icon1} className='w-[20px]' />
             </button>
           }
@@ -27,7 +27,7 @@ const Navbar = ({ title, subtitle, url1, url2, url4, icon1, icon2, icon3, icon4 
         <Link to={url2}>
           {icon2 &&           
             <div className="pl-1.5">
-              <button className="p-2 bg-[#494949] rounded-md">
+              <button className="p-2 bg-[#2b2b45] rounded-md">
                 <img src={icon2} className='w-[20px]' />
               </button>
             </div>
@@ -36,13 +36,13 @@ const Navbar = ({ title, subtitle, url1, url2, url4, icon1, icon2, icon3, icon4 
         {icon3 &&        
           <div className="pl-1.5">
             <button
-              className={`p-2 bg-[#494949] rounded-md ${showSocialMenu ? 'border-[#00f7ff]' : ''}`}
+              className={`p-2 bg-[#2b2b45] rounded-md ${showSocialMenu ? 'border-[#00f7ff]' : ''}`}
               onClick={handleIcon3Click}
             >
               <img src={icon3} className='w-[20px]' />
             </button>
             {showSocialMenu && (
-              <div className="absolute right-4 flex mt-1.5 bg-[#494949] rounded-md px-1 py-0.5">
+              <div className="absolute right-4 flex mt-1.5 bg-[#2b2b45] rounded-md px-1 py-0.5">
                 <Link to='https://www.linkedin.com/in/salman-setiawan/' target="_blank" rel="noopener noreferrer" className="p-1.5">
                   <img src="/assets/linkedin.svg" alt="" className="w-[20px]" />
                 </Link>

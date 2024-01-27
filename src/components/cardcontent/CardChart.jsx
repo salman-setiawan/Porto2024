@@ -3,7 +3,7 @@ import React from 'react'
 const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric7, result1, result2, result3, result4, result5, result6, result7, title1, desc1, desc2}) => {
   return (
     <div>
-      <div className="flex flex-col h-full p-4 bg-[#252525] rounded-lg space-y-3">
+      <div className="flex flex-col h-full p-4 bg-[#7070ca] bg-opacity-10 rounded-lg space-y-3">
         {title1 &&       
           <div>
             {title1 &&
@@ -12,7 +12,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
               </p>
             }
             {desc1 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc1}
               </p>
             }
@@ -22,7 +22,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric1 &&        
             <div className='grid grid-cols-2'>
               {metric1 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric1}
                 </p>
               }
@@ -36,7 +36,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric2 &&        
             <div className='grid grid-cols-2'>
               {metric2 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric2}
                 </p>
               }
@@ -50,7 +50,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric3 &&        
             <div className='grid grid-cols-2'>
               {metric3 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric3}
                 </p>
               }
@@ -64,7 +64,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric4 &&        
             <div className='grid grid-cols-2'>
               {metric4 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric4}
                 </p>
               }
@@ -78,7 +78,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric5 &&        
             <div className='grid grid-cols-2'>
               {metric5 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric5}
                 </p>
               }
@@ -92,7 +92,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric6 &&        
             <div className='grid grid-cols-2'>
               {metric6 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric6}
                 </p>
               }
@@ -106,7 +106,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric7 &&        
             <div className='grid grid-cols-2'>
               {metric7 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric7}
                 </p>
               }
@@ -119,7 +119,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           }
         </div>
         {desc2 &&                 
-          <p className="text-[12px] text-[#9E9E9E]">
+          <p className="text-[12px] text-[#b0b0b0]">
             {desc2}
           </p>
         }

@@ -11,7 +11,7 @@ const MobtoonGallery = () => {
           icon1='/assets/home.svg'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-20 pb-8">
+      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:w-[1240px] items-center gap-8 px-4 overflow-y-auto">
           <img src="/assets/mobtoon/gallery/screen1.png" alt="" className="" />
           <img src="/assets/mobtoon/gallery/screen2.png" alt="" className="" />

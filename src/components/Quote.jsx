@@ -1,0 +1,19 @@
+import React from 'react'
+
+const Quote = ({text, author}) => {
+  return (
+    <div>
+      <div className="flex">
+        <div className="bg-[#A6D474] w-4"></div>
+        <div className="bg-[#A6D474] bg-opacity-10 p-4">
+          <p className="text-[14px] italic pl-2">{text}</p>
+          {author &&
+            <p className="text-[14px]">{author}</p>
+          }
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Quote

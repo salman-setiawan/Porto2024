@@ -3,7 +3,7 @@ import React from 'react'
 const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, title2, title3, title4, title5, desc1, desc2, desc3, desc4, desc5}) => {
   return (
     <div>
-      <div className="flex flex-col h-full p-4 bg-[#252525] rounded-lg space-y-3">
+      <div className="flex flex-col h-full p-4 bg-[#7070ca] bg-opacity-10 rounded-lg space-y-3">
         {avatar &&        
           <img src={avatar} alt="" className="w-[40px] h-[40px] object-cover rounded-md" />
         }
@@ -15,7 +15,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
               </p>
             }
             {desc1 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc1}
               </p>
             }
@@ -25,7 +25,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
           {metric1 &&        
             <div className='flex justify-between'>
               {metric1 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric1}
                 </p>
               }
@@ -39,7 +39,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
           {metric2 &&        
             <div className='flex justify-between'>
               {metric2 &&
-                <p className="text-[12px] text-[#9E9E9E]">
+                <p className="text-[12px] text-[#b0b0b0]">
                   {metric2}
                 </p>
               }
@@ -59,7 +59,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
               </p>
             }
             {desc2 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc2}
               </p>
             }
@@ -73,7 +73,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
               </p>
             }
             {desc3 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc3}
               </p>
             }
@@ -87,7 +87,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
               </p>
             }
             {desc4 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc4}
               </p>
             }
@@ -101,7 +101,7 @@ const CardEvaluation = ({avatar, metric1, metric2, result1, result2, title1, tit
               </p>
             }
             {desc5 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc5}
               </p>
             }

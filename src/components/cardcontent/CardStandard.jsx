@@ -3,7 +3,7 @@ import React from 'react'
 const CardStandard = ({avatar, title1, title2, title3, title4, title5, desc1, desc2, desc3, desc4, desc5}) => {
   return (
     <div>
-      <div className="flex flex-col h-full px-4 pt-4 pb-5 bg-[#252525] rounded-lg space-y-3">
+      <div className="flex flex-col h-full px-4 pt-4 pb-5 bg-[#7070ca] bg-opacity-10 rounded-lg space-y-3">
         {avatar &&        
           <img src={avatar} alt="" className="w-[40px] h-[40px] object-cover rounded-md" />
         }
@@ -15,7 +15,7 @@ const CardStandard = ({avatar, title1, title2, title3, title4, title5, desc1, de
               </p>
             }
             {desc1 &&          
-              <p className="text-[12px] text-[#9E9E9E]">
+              <p className="text-[12px] text-[#b0b0b0]">
                 {desc1}
               </p>
             }

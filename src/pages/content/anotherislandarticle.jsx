@@ -5,6 +5,7 @@ import CardStandard from '../../components/cardcontent/CardStandard'
 import DocumentLink from '../../components/DocumentLink'
 import FAB from '../../components/FloatButton'
 import CardChart from '../../components/cardcontent/CardChart'
+import CTAGallery from '../../components/CTAGallery'
 
 const AnotherIslandArticle = () => {
   return (
@@ -15,7 +16,7 @@ const AnotherIslandArticle = () => {
           icon1='/assets/home.svg'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-20 pb-8">
+      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1="This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology."
@@ -172,7 +173,7 @@ const AnotherIslandArticle = () => {
             desc1="This stage involves creating design solutions, starting from building rough concepts such as the Game Design Document (GDD), storyboard, and wireframe, to comprehensive designs like UI mockups."
             desc2='The creation of the GDD serves as the foundational structure for the game to be developed. The design outlined in the GDD may evolve with updates to the game. Here is the GDD that has been created. You can see the whole GDD that i create below.'
           />
-          <div className="w-full py-2.5 px-3 bg-violet-500 bg-opacity-10">
+          <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
             <DocumentLink
               url='https://s.itk.ac.id/gddaip'
               icon='/assets/document.svg'
@@ -191,10 +192,8 @@ const AnotherIslandArticle = () => {
           <Paragraph
             desc1="The image above displays the game's interface layout that will be designed according to the flow established in the Game Design Document (GDD) and the previously crafted storyboard. The next step involves designing the style guide and design components (this information can be accessed in the previously created GDD). The final step is creating the UI Mockup design as a visual representation closely resembling the desired product."
           />
-          <div className="flex justify-center w-full py-2.5 px-3 bg-violet-500 bg-opacity-10">
-            <p className="text-white text-[14px] font-semibold">
-              To view the results of the UI mockup I created, you can access them in gallery design.
-            </p>
+          <div className="w-full">
+            <CTAGallery />
           </div>
           <Paragraph 
             title='Evaluasi Desain.'
