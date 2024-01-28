@@ -16,7 +16,7 @@ const ProfileImage = ({ images }) => {
       <img
         src={images[currentImage]}
         alt=""
-        className="w-full sm:h-[240px] object-cover rounded-md"
+        className="w-full h-[240px] object-cover rounded-md"
       />
     </div>
   )
