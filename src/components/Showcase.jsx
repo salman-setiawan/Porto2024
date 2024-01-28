@@ -22,8 +22,12 @@ const Works = () => {
     >
       <SwiperSlide>
         <Link to="/content/eduwork/galleryview" className='space-y-8'>
-          <ImageSlide img='/assets/craft4.png' />
-          <ImageLabel title='Eduwork Opportunity Page' desc1='PT. Talenta Sinergi Group (Internship)' desc2='Collaboration Works' />
+          <ImageSlide img='/assets/showcase/showcase3.webp' />
+          <ImageLabel 
+            title='Eduwork Opportunity Page' 
+            desc1='PT. Talenta Sinergi Group (Internship)' 
+            desc2='Collaboration Works' 
+          />
         </Link>
       </SwiperSlide>
       {/* <SwiperSlide>
@@ -34,8 +38,13 @@ const Works = () => {
       </SwiperSlide> */}
       <SwiperSlide>
         <Link to="/content/edufams/articleview" className='space-y-8'>
-          <ImageSlide img='/assets/craft7.png' />
-          <ImageLabel title='EduFams' desc1='PT. Media Kreasi Abadi (Internship)' desc2='Personal Works' chipdesc='With UX Case' />
+          <ImageSlide img='/assets/showcase/showcase4.webp' />
+          <ImageLabel 
+            title='EduFams' 
+            desc1='PT. Media Kreasi Abadi (Internship)' 
+            desc2='Personal Works' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
     </Swiper>
@@ -55,14 +64,24 @@ const Crafts = () => {
     >
       <SwiperSlide>
         <Link to="/content/mobtoon/articleview" className='space-y-8'>        
-          <ImageSlide img='/assets/craft1.png' />
-          <ImageLabel title='mobtoon' desc1='June 2023' desc2='Comic App' chipdesc='With UX Case' />
+          <ImageSlide img='/assets/showcase/showcase1.webp' />
+          <ImageLabel 
+            title='mobtoon' 
+            desc1='June 2023' 
+            desc2='Comic App' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/content/anotherisland/articleview" className='space-y-8'>       
-          <ImageSlide img='/assets/craft2.png' />
-          <ImageLabel title='Another Day in the Island' desc1='November 2023' desc2='Desktop Arcade Game' chipdesc='With UX Case' />
+          <ImageSlide img='/assets/showcase/showcase2.webp' />
+          <ImageLabel 
+            title='Another Day in the Island' 
+            desc1='November 2023' 
+            desc2='Desktop Arcade Game' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
 
