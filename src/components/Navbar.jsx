@@ -5,7 +5,7 @@ const Navbar = ({ url1, url2, url3, icon1, icon2, icon3 }) => {
   return (
     <div>
       {icon1 &&
-        <div className="w-full flex items-center justify-end px-4 py-4 text-white bg-[#111111] bg-opacity-90">
+        <div className="w-full flex items-center justify-end px-4 py-4">
           <Link to={url1} aria-label="Link 1">        
             <button aria-label="Button 1" className="p-2 bg-[#2b2b45] rounded-md">
               <img src={icon1} className='w-[20px]' alt='Icon 1' />

@@ -14,14 +14,14 @@ const Works = () => {
     <Swiper
       pagination={true} 
       modules={[Pagination]}
-    	className='h-[560px] md:h-[640px]'
+    	className='h-[520px] 2xl:h-[675px]'
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/eduwork/galleryview" className='space-y-8'>
+        <Link to="/content/eduwork/galleryview" className='space-y-6 2xl:space-y-[58px]'>
           <ImageSlide img='/assets/showcase/showcase3.webp' />
           <ImageLabel 
             title='Eduwork Opportunity Page' 
@@ -37,7 +37,7 @@ const Works = () => {
         </Link>
       </SwiperSlide> */}
       <SwiperSlide>
-        <Link to="/content/edufams/articleview" className='space-y-8'>
+        <Link to="/content/edufams/articleview" className='space-y-6 2xl:space-y-[58px]'>
           <ImageSlide img='/assets/showcase/showcase4.webp' />
           <ImageLabel 
             title='EduFams' 
@@ -56,14 +56,14 @@ const Crafts = () => {
     <Swiper
       pagination={true} 
       modules={[Pagination]}
-    	className='h-[560px] md:h-[640px]'
+    	className='h-[500px] 2xl:h-[675px]'
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/mobtoon/articleview" className='space-y-8'>        
+        <Link to="/content/mobtoon/articleview" className='space-y-6 2xl:space-y-[58px]'>        
           <ImageSlide img='/assets/showcase/showcase1.webp' />
           <ImageLabel 
             title='mobtoon' 
@@ -74,7 +74,7 @@ const Crafts = () => {
         </Link>
       </SwiperSlide>
       <SwiperSlide>
-        <Link to="/content/anotherisland/articleview" className='space-y-8'>       
+        <Link to="/content/anotherisland/articleview" className='space-y-6 2xl:space-y-[58px]'>       
           <ImageSlide img='/assets/showcase/showcase2.webp' />
           <ImageLabel 
             title='Another Day in the Island' 

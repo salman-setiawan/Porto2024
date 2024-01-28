@@ -19,7 +19,7 @@ const CollectionPages = () => {
 					/>
 				</div>
 			</div>
-			<div className="fixed bottom-0 w-full flex items-center pb-24 2xl:pb-28">
+			<div className="fixed bottom-0 w-full flex items-center pb-24">
 				{activeTab === 'Works' && (
           <Showcase.Works />
         )}
