@@ -17,7 +17,7 @@ const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className='px-4 hidden md:block w-fit'>
+        <div className='hidden md:block w-fit'>
           <div className="flex flex-col gap-y-1 justify-center items-center">
             <div className="flex">
               <p className="text-[14px] font-semibold">{title}</p>
