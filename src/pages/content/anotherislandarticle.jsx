@@ -29,7 +29,7 @@ const AnotherIslandArticle = () => {
             title='Method'
             desc1="This research employs the User-Centered Design (UCD) approach, a method that places users as the primary focus in the product, application, or experience design process. According to usability.gov, UCD follows a life cycle, as illustrated in the image below."
           />
-          <img src="/assets/anotherisland/article/content1.png" alt="" className="" />
+          <img src="/assets/anotherisland/article/content1.webp" alt="" className="" />
           <Paragraph 
             title='Identify Need.'
             desc1="The needs identification stage is where the researcher identifies the requirements that users will have while playing the designed arcade game. A questionnaire can serve as a tool to assist the researcher in the process of identifying user needs throughout the project."
@@ -143,7 +143,7 @@ const AnotherIslandArticle = () => {
             desc2="In this case, the researcher has selected a game with a similar mechanism, namely the arcade game series from Bandai Namco called Galaga."
           />
           <div className="flex flex-col space-y-2.5">
-            <img src="/assets/anotherisland/article/content2.jpg" alt="" className="w-full" />
+            <img src="/assets/anotherisland/article/content2.webp" alt="" className="w-full" />
             <div className="grid grid-cols-2 space-x-2 items-start">
               <CardStandard 
                 title1='Game'
@@ -183,12 +183,12 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             desc1="The GDD has been successfully designed, and the next step is the storyboard design phase. The goal of designing the storyboard is to provide a comprehensive understanding of what kind of game will be created. Here are the visual results of the designed storyboard."
           />
-          <img src="/assets/anotherisland/article/content3.png" alt="" className="w-full" />
+          <img src="/assets/anotherisland/article/content3.webp" alt="" className="w-full" />
           <Paragraph
             desc1="The image above is the result of a storyboard illustrating how the game will unfold. The storyboard's flow begins when the player opens the game until completing it."
             desc2="With the completion of the storyboard, the next step is entering the wireframe design process, aiming to visualize the designed concepts into the framework of the game's interface."
           />
-          <img src="/assets/anotherisland/article/content4.png" alt="" className="" />
+          <img src="/assets/anotherisland/article/content4.webp" alt="" className="" />
           <Paragraph
             desc1="The image above displays the game's interface layout that will be designed according to the flow established in the Game Design Document (GDD) and the previously crafted storyboard. The next step involves designing the style guide and design components (this information can be accessed in the previously created GDD). The final step is creating the UI Mockup design as a visual representation closely resembling the desired product."
           />
@@ -255,7 +255,7 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             desc1="Players will also be asked for reviews and feedback in the form of criticisms and suggestions that can contribute to the development of the user experience and user interface of this game. Here are the results of the evaluation for the arcade game 'Another Day in the Island' that I obtained."
           />
-          <img src="/assets/anotherisland/article/ces1.png" alt="" className="" />
+          <img src="/assets/anotherisland/article/ces1.webp" alt="" className="" />
           <Paragraph 
             desc1="The image above illustrates the overall usability level of the game 'Another Day in the Island' with a score of 3.72, which is above average on a scale of 1 (very negative) to 5 (very positive), indicating a good level of usability. The graph shows customer effort scores (CES) on the y-axis (vertical) and usability criteria such as Satisfaction (3.675), Learnability (3.2), Efficiency (4), and Memorability (4.1) on the x-axis (horizontal)."
             desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are the findings.'
@@ -284,7 +284,7 @@ const AnotherIslandArticle = () => {
             desc1=""
             desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are the findings.'
           />
-          <img src="/assets/anotherisland/article/ces2.png" alt="" className="" />
+          <img src="/assets/anotherisland/article/ces2.webp" alt="" className="" />
           <Paragraph 
             desc1="The above image compares the evaluation data 1 and 2 for the game 'Another Day in the Island,' showing a difference in overall usability. Evaluation 1 recorded a score of 3.72, while Evaluation 2 indicates an improvement with a score of 4.14. This evaluation suggests that the game has undergone improvements in usability between the two evaluations. In the comparison chart, it can be seen that usability criteria such as satisfaction, learnability, efficiency, and memorability also experienced overall improvement. Satisfaction increased from 3.68 to 4.03, learnability from 3.1 to 3.7, efficiency from 4.0 to 4.3, and memorability from 4.1 to 4.55. The column comparison chart visualizes this improvement clearly, highlighting the progress achieved in each usability aspect."
             desc2='The changes and improvements implemented between Evaluation 1 and 2 have successfully enhanced the usability level of each criterion, providing a better gaming experience for users of Another Day in the Island.'

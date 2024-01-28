@@ -13,34 +13,34 @@ const EduworkGallery = () => {
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 jusitfy-start gap-4 px-4 overflow-y-auto">
           <div className="hidden lg:block flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen1.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen4.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
           </div>
           <div className="hidden lg:block flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen2.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen5.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen2.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
           </div>
           <div className="hidden lg:block flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen3.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
           </div>
           <div className="hidden md:block lg:hidden flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen1.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen3.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen5.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
           </div>
           <div className="hidden md:block lg:hidden flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen2.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen4.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen2.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
           </div>
           <div className="md:hidden block flex-col space-y-4">
-            <img src="/assets/eduwork/gallery/screen1.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen2.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen3.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen4.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen5.png" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.png" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen2.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
           </div>
           <div className="pb-16"></div>
         </div>
