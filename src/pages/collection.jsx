@@ -20,10 +20,6 @@ const CollectionPages = () => {
 				</div>
 			</div>
 			<div className="fixed bottom-0 w-full flex items-center pb-24 2xl:pb-28">
-				{/* <div className="fixed left-0 lg:w-48 xl:w-64 h-full bg-gradient-to-r from-[#111111] to-transparent" style={{ zIndex: 2 }}>
-				</div>
-				<div className="fixed right-0 lg:w-48 xl:w-64 h-full bg-gradient-to-r from-transparent to-[#111111]" style={{ zIndex: 2 }}>
-				</div> */}
 				{activeTab === 'Works' && (
           <Showcase.Works />
         )}
