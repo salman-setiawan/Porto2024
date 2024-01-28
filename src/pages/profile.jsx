@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 const Profile = () => {
   const images = [
-    '/assets/gallery1.jpg',
-    '/assets/gallery2.jpg',
-    '/assets/gallery3.jpg',
-    '/assets/gallery4.jpg',
-    '/assets/gallery5.jpg',
+    '/assets/bio/gallery1.webp',
+    '/assets/bio/gallery2.webp',
+    '/assets/bio/gallery3.webp',
+    '/assets/bio/gallery4.webp',
+    '/assets/bio/gallery5.webp',
   ];
   
   return (
