@@ -56,7 +56,7 @@ const Crafts = () => {
     <Swiper
       pagination={true} 
       modules={[Pagination]}
-    	className='h-[500px] 2xl:h-[675px]'
+    	className='h-[520px] 2xl:h-[675px]'
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
