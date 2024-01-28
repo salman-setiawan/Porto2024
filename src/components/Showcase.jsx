@@ -21,28 +21,30 @@ const Works = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/eduwork/galleryview" className='flex justify-center'>
-          <div className="space-y-6 2xl:space-y-[58px]">
-            <ImageSlide img='/assets/showcase/showcase3.webp' />
-            <ImageLabel 
-              title='Eduwork Opportunity Page' 
-              desc1='PT. Talenta Sinergi Group (Internship)' 
-              desc2='Collaboration Works' 
-            />
-          </div>
+        <Link to="/content/eduwork/galleryview" className='space-y-6 2xl:space-y-[58px]'>
+          <ImageSlide img='/assets/showcase/showcase3.webp' />
+          <ImageLabel 
+            title='Eduwork Opportunity Page' 
+            desc1='PT. Talenta Sinergi Group (Internship)' 
+            desc2='Collaboration Works' 
+          />
         </Link>
       </SwiperSlide>
+      {/* <SwiperSlide>
+        <Link to="/content/dekat/galleryview" className='space-y-8'>
+          <ImageSlide img='/assets/craft5.png' />
+          <ImageLabel title='DEKAT Website Page' desc1='Ghazi Teknologi Indonesia' desc2='Personal Works' />
+        </Link>
+      </SwiperSlide> */}
       <SwiperSlide>
-        <Link to="/content/edufams/articleview" className='flex justify-center'>
-          <div className="space-y-6 2xl:space-y-[58px]">
-            <ImageSlide img='/assets/showcase/showcase4.webp' />
-            <ImageLabel 
-              title='EduFams' 
-              desc1='PT. Media Kreasi Abadi (Internship)' 
-              desc2='Personal Works' 
-              chipdesc='With UX Case' 
-            />
-          </div>
+        <Link to="/content/edufams/articleview" className='space-y-6 2xl:space-y-[58px]'>
+          <ImageSlide img='/assets/showcase/showcase4.webp' />
+          <ImageLabel 
+            title='EduFams' 
+            desc1='PT. Media Kreasi Abadi (Internship)' 
+            desc2='Personal Works' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
     </Swiper>
@@ -61,29 +63,25 @@ const Crafts = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/mobtoon/articleview" className='flex justify-center'>
-          <div className="space-y-6 2xl:space-y-[58px]">          
-            <ImageSlide img='/assets/showcase/showcase1.webp' />
-            <ImageLabel 
-              title='mobtoon' 
-              desc1='June 2023' 
-              desc2='Comic App' 
-              chipdesc='With UX Case' 
-            />
-          </div>        
+        <Link to="/content/mobtoon/articleview" className='space-y-6 2xl:space-y-[58px]'>        
+          <ImageSlide img='/assets/showcase/showcase1.webp' />
+          <ImageLabel 
+            title='mobtoon' 
+            desc1='June 2023' 
+            desc2='Comic App' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
       <SwiperSlide>
-        <Link to="/content/anotherisland/articleview" className='flex justify-center'>
-          <div className="space-y-6 2xl:space-y-[58px]">          
-            <ImageSlide img='/assets/showcase/showcase2.webp' />
-            <ImageLabel 
-              title='Another Day in the Island' 
-              desc1='November 2023' 
-              desc2='Desktop Arcade Game' 
-              chipdesc='With UX Case' 
-            />
-          </div>       
+        <Link to="/content/anotherisland/articleview" className='space-y-6 2xl:space-y-[58px]'>       
+          <ImageSlide img='/assets/showcase/showcase2.webp' />
+          <ImageLabel 
+            title='Another Day in the Island' 
+            desc1='November 2023' 
+            desc2='Desktop Arcade Game' 
+            chipdesc='With UX Case' 
+          />
         </Link>
       </SwiperSlide>
 
