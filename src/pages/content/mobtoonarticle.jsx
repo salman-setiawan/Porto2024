@@ -72,9 +72,10 @@ const MobtoonArticle = () => {
           <Paragraph 
             title="Feedback"
             desc1='Before initiating the application design process, as the designer, I conducted research by interviewing several individuals (in this case, readers of manhwa) to understand their experiences as users while reading manhwa on websites or mobile applications.'
-            desc2='In this case, I conducted Moderated Usability Testing dengan tujuan mengumpulkan feedback dan observasi langsung dari pengguna saat mereka berinteraksi dengan produk atau sistem. Disini seorang moderator memandu pengguna melalui tugas-tugas tertentu, sementara mengamati dan mencatat respon mereka. Adapun metrics yang dinilai adalah waktu yang diperlukan untuk menyelesaikan tugas, tingkat keberhasilan, jumlah kesalahan, dan kepuasan pengguna.'
+            desc2='In this case, I conducted Moderated Usability Testing with the aim of gathering feedback and direct observations from users as they interacted with the product or system. Here, a moderator guided users through specific tasks while observing and noting their responses. The metrics evaluated included the time taken to complete tasks, success rate, error count, and user satisfaction.'
+            disclaimer='For the results, they are still in the development stage.'
           />
-          <div className="grid grid-cols-2 gap-2 items-center">
+          {/* <div className="grid grid-cols-2 gap-2 items-center">
             <CardEvaluation
               avatar='/assets/avatar.png' 
               title1='Achmad Rivaldo'
@@ -127,7 +128,7 @@ const MobtoonArticle = () => {
               title3='Feedback'
               desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
             />
-          </div>
+          </div> */}
           <div className="pb-1"></div>
         </div>
       </div>
