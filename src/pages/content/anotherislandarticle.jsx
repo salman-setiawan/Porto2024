@@ -198,6 +198,12 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             title='Evaluasi Desain.'
             desc1="The goal of this evaluation is to gather player opinions on the built game through prepared questions and understand what players feel while playing. This evaluation will be conducted iteratively to determine whether the conducted evaluations are satisfactory or not."
+          />
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
+            <img src="/assets/anotherisland/article/user1.webp" alt="" className="w-full" />
+            <img src="/assets/anotherisland/article/user2.webp" alt="" className="w-full" />
+          </div>
+          <Paragraph
             desc2="The first stage involves collecting feedback using questions that will be included in the player usability questionnaire for the game. Parameters used for analysis include age, gender, and questions about Another Day in the Island. Age is used to analyze the level of understanding of game analysis. Gender is used as a comparative measure of the tendency to assess the game. Here's the result."
           />
           <div className="w-full grid md:grid-cols-2 gap-2">
@@ -258,56 +264,55 @@ const AnotherIslandArticle = () => {
           <img src="/assets/anotherisland/article/ces1.webp" alt="" className="" />
           <Paragraph 
             desc1="The image above illustrates the overall usability level of the game 'Another Day in the Island' with a score of 3.72, which is above average on a scale of 1 (very negative) to 5 (very positive), indicating a good level of usability. The graph shows customer effort scores (CES) on the y-axis (vertical) and usability criteria such as Satisfaction (3.675), Learnability (3.2), Efficiency (4), and Memorability (4.1) on the x-axis (horizontal)."
-            desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are the findings.'
+            desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are some examples of the feedback results that have been collected.'
           />
-          <div className="flex space-x-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             <CardStandard 
               avatar='/assets/avatar.png' 
-              title1='Achmad Ripaldi'
-              desc1='Mahasiswa'
+              title1='Rudi'
+              desc1='College Student, 21 Years Old'
               title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Saran'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
+              desc2='From a visual and audio standpoint, the game feels very good for its genre, but there seem to be some hidden pixels on obstacles in the game, causing frequent glitches. In terms of gameplay experience, the game has very easy and engaging gameplay, but the objectives in the game are few (only avoiding and eliminating), making it feel monotonous, lacking exploration, and lacking the desire to continue playing.'
+              title3='Feedback'
+              desc3='Additional objectives beyond survival and elimination, such as power-ups, in-game currency, stage levels, etc., can be added to prevent monotony. Additionally, several warnings can be included when entering the game, such as flashes of light, scary images, etc.'
             />
             <CardStandard 
               avatar='/assets/avatar.png' 
-              title1='Achmad Ripaldi'
-              desc1='Mahasiswa'
+              title1='Anna'
+              desc1='Tutor, 24 Years Old'
               title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Saran'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
+              desc2='The game is interesting and exciting, and the difficulty in the gameplay is also thrilling. However, sometimes there are too many enemy spawns, limiting mobility.'
+              title3='Feedback'
+              desc3="When playing the game, I encountered several bugs, such as when entering the options menu, the existing enemies will reset, and the SFX and BGM options still don't work. Perhaps creating easier stage levels like a tutorial to facilitate players in getting to know the game."
             />
           </div>
           <Paragraph 
-            desc1=""
-            desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are the findings.'
+            desc1="From the evaluation results, the next step will focus on improving user experience and user interface, as well as fixing bugs that disrupt players' comfort during gameplay. This improvement process will take approximately 2 weeks, involving stages such as analysis and determination of enhancements to be made, followed by retesting with the updated version among previous players. Below are the results obtained from this second evaluation."
           />
           <img src="/assets/anotherisland/article/ces2.webp" alt="" className="" />
           <Paragraph 
             desc1="The above image compares the evaluation data 1 and 2 for the game 'Another Day in the Island,' showing a difference in overall usability. Evaluation 1 recorded a score of 3.72, while Evaluation 2 indicates an improvement with a score of 4.14. This evaluation suggests that the game has undergone improvements in usability between the two evaluations. In the comparison chart, it can be seen that usability criteria such as satisfaction, learnability, efficiency, and memorability also experienced overall improvement. Satisfaction increased from 3.68 to 4.03, learnability from 3.1 to 3.7, efficiency from 4.0 to 4.3, and memorability from 4.1 to 4.55. The column comparison chart visualizes this improvement clearly, highlighting the progress achieved in each usability aspect."
             desc2='The changes and improvements implemented between Evaluation 1 and 2 have successfully enhanced the usability level of each criterion, providing a better gaming experience for users of Another Day in the Island.'
-            desc3='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are the findings.'
+            desc3='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are some examples of the feedback results that have been collected.'
           />
-          <div className="flex space-x-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             <CardStandard 
               avatar='/assets/avatar.png' 
-              title1='Achmad Ripaldi'
-              desc1='Mahasiswa'
+              title1='Rudi'
+              desc1='College Student, 21 Years Old'
               title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Saran'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
+              desc2="For the design aspect, it's already very good and easy to understand, and the tutorial updates are great and easy to comprehend, and the buffs are very helpful in gameplay."
+              title3='Feedback'
+              desc3='Additionally, adding a storyline like cutscenes at the beginning of the game, and varied enemy types and power-ups can enhance the experience.'
             />
             <CardStandard 
               avatar='/assets/avatar.png' 
-              title1='Achmad Ripaldi'
-              desc1='Mahasiswa'
+              title1='Anna'
+              desc1='Tutor, 24 Years Old'
               title2='Review'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
-              title3='Saran'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
+              desc2="It's more easy to play because there are tutorial stages, perfect for filling leisure time, especially with the interesting buff feature."
+              title3='Feedback'
+              desc3="I don't have any suggestions for game development as it's already good, especially the bugs I've encountered have been fixed."
             />
           </div>
           <Paragraph 

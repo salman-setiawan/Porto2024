@@ -67,7 +67,7 @@ const Crafts = () => {
           <ImageSlide img='/assets/showcase/showcase1.webp' />
           <ImageLabel 
             title='mobtoon' 
-            desc1='June 2023' 
+            desc1='January 2024' 
             desc2='Comic App' 
             chipdesc='With UX Case' 
           />

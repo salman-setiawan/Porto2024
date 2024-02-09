@@ -151,10 +151,14 @@ const EdufamsArticle = () => {
           <Quote 
             text='Pada halaman dashboard utama untuk aplikasi berbasis web desain yang ditawarkan terlalu sepi, sehingga diberikan peningkatan dengan menambahkan card pada tiap komponennya serta menambah satu level pada warna latar belakang seperti pada gambar dibawah.'
           /> */}
-          {/* <Paragraph 
+          <Paragraph 
             title="Pitching Day."
-            desc1="Tahap ini saya bersama tim melakukan pencarian suatu permasalahan berdasarkan tema yang didapat dengan melakukan observasi dengan data yang didapat dari internet, selama proses observasi kami mendapatkan permasalahan yang kami jabarkan sebagai berikut ini."
-          /> */}
+            desc1="This stage is the final stage carried out with all team members. Here, we pitch to the mentor acting as an investor about the EduFams project that has been developed over the past few months."  
+          />
+          <img src="/assets/edufams/article/pitch.jpg" alt="" className="" />
+          <Paragraph 
+            desc1="The pitching activity is conducted alternately at the MKA office with other teams. This activity is also quite an interesting and challenging experience for me because it requires good communication and selling skills to make the mentors interested in the product I have developed."
+          />
           <div className="pb-8"></div>
         </div>
       </div>
