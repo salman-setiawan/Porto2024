@@ -41,27 +41,16 @@ const EdufamsArticle = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             <CardStandard 
               title1='Problem 1'
-              desc1='Selama pandemi covid-19 membuat anak-anak di Indonesia lebih banyak menghabiskan waktunya dirumah dengan gadget untuk bermain dan bersosialisasi. Berdasarkan data Badan Pusat Statistik tahun 2021 sebanyak 88,99% anak berumur 5 tahun ke atas sudah mengakses internet 
-              seperti sosial media dan 63,08% untuk hiburan seperti game. Hal ini bisa
-              menyebabkan terjadinya kecanduan gadget pada anak jika tidak ditangani 
-              dengan tepat.'
+              desc1='During the COVID-19 pandemic, children in Indonesia spent more time at home with gadgets for playing and socializing. Based on data from the Central Statistics Agency in 2021, 88.99% of children aged 5 and above have accessed the internet for social media, and 63.08% for entertainment such as games. This can lead to gadget addiction in children if not handled properly.'
             />
             <div className="flex flex-col space-y-2">
               <CardStandard  
                 title1='Problem 2'
-                desc1='Selama pandemi covid-19 berdasarkan Komnas Perempuan tahun 2022 
-                sebanyak 64.211 kasus dispensasi pernikahan anak terjadi selama tahun 
-                2011 yang mana meningkat 3 kali lipat dari tahun sebelumnya yang hanya 
-                sebesar 23.126 kasus. Yang menyebabkan urgensi kebutuhan edukasi 
-                parenting sangatlah tinggi.'
+                desc1="During the COVID-19 pandemic, according to the National Commission on Violence Against Women (Komnas Perempuan) in 2022, there were 64,211 cases of child marriage dispensation in 2011, which is three times higher than the previous year's 23,126 cases. This highlights the urgent need for parenting education."
               />
               <CardStandard  
                 title1='Problem 3'
-                desc1='Berdasarkan hasil wawancara dengan seorang ibu berumur 43 tahun. 
-                Dapat disimpulkan bahwa selama pandemi covid-19 banyak pekerja yang 
-                terkena PHK menyebabkan keruntuhan ekonomi bagi keluarga menengah 
-                kebawah, dalam hal ini untuk membeli kebutuhan anak dan keluarga 
-                menjadi hal yang sulit untuk dilakukan.'
+                desc1='Based on an interview with a 43-year-old mother, it can be concluded that during the COVID-19 pandemic, many workers were laid off, leading to economic collapse for lower-middle-class families. In this case, buying necessities for children and families has become difficult.'
               />
             </div>
           </div>
@@ -72,15 +61,15 @@ const EdufamsArticle = () => {
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-2">
             <CardStandard 
               title1='Opinion 1'
-              desc1=' Anak beresiko mengalami kecanduan gadget jika tidak diberikan edukasi parenting.'
+              desc1='Children are at risk of becoming addicted to gadgets if they are not provided with proper parenting education.'
             />
             <CardStandard  
               title1='Opinion 2'
-              desc1='Perlunya edukasi parenting untuk orang tua khususnya pasangan usia anak.'
+              desc1='The need for parenting education is crucial, especially for couples with children.'
             />
             <CardStandard  
               title1='Opinion 3'
-              desc1='anyak keluarga yang membutuhkan dana untuk kebutuhan hidup.'
+              desc1='Many families need funds for their living expenses.'
             />
           </div>
           <Paragraph
@@ -88,10 +77,10 @@ const EdufamsArticle = () => {
             desc1='After determining the problem statement in the research, the next step is to conduct a brainstorming process to find ideas or solutions to the existing problem. The solutions obtained are as follows.'
           />
           <Quote 
-            text='Membuat sebuah platform edukasi keluarga untuk memberikan edukasi parenting lewat media informasi seperti artikel dan video, maupun kelas dan pelatihan. Dan juga sekaligus memberi fasilitas berupa layanan donasi untuk membantu meringankan keluarga dengan ekonomi menengah kebawah dalam memenuhi kebutuhannya saat ini.'
+            text='Creating a family education platform to provide parenting education through informational media such as articles and videos, as well as classes and training. It also provides facilities in the form of donation services to help alleviate the burden of lower-middle-class families in meeting their current needs.'
           />
           <Paragraph
-            desc1='Solusi berhasil didapatkan kemudian lanjut ke proses perencanaan dengan membuat information architecture yang disajikan dalam bentuk mind map untuk menjabarkan apa saja informasi yang diperlukan untuk mewujudkan solusi tersebut. Berikut adalah tangkapan layar dari mind map dengan menggunakan aplikasi berbasis website Miro.'
+            desc1='The solution was successfully obtained and then continued to the planning process by creating an information architecture presented in the form of a mind map to outline what information is needed to realize the solution. Here is a screenshot of the mind map using the Miro web-based application.'
           />
           <img src="/assets/edufams/article/brand.png" alt="" className="" />
           <Paragraph 
