@@ -19,7 +19,17 @@ const AnotherIslandArticle = () => {
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
         <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
-            desc1="This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology."
+            desc1="This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology. You can play this game on the link down below."
+            disclaimer="This game can be play on PC only using mouse and keyboard for the controller."
+          />
+          <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
+            <DocumentLink
+              url='https://anotherisland.netlify.app'
+              icon='/assets/document.svg'
+              text='Play the game here'
+            />
+          </div>
+          <Paragraph 
             desc2="In this game, players take on the role of a mysterious character with the alias 'Unknown,' whose objective is to gather as many points as possible by defeating monsters scattered throughout the area. Here's a brief preview of the game."
           />
           <video autoPlay muted loop className='w-full'>
@@ -37,14 +47,14 @@ const AnotherIslandArticle = () => {
           />
           <div className="w-full grid md:grid-cols-2 gap-2 items-start">
             <CardChart 
-              title1='Rentang Umur'
+              title1='Age Range'
               metric1='7-12'
               metric2='13-17'
               metric3='18-22'
               metric4='23-28'
               metric5='29-34'
               metric6='35-40'
-              metric7='40 Keatas'
+              metric7='40 and above'
               result1='1%'
               result2='0%'
               result3='78,4%'
@@ -54,12 +64,12 @@ const AnotherIslandArticle = () => {
               result7='0%'
             />
             <CardChart 
-              title1='Alasan Bermain Permainan Video'
-              metric1='Sekedar hiburan'
-              metric2='Punya hobi bermain game'
-              metric3='Berkarir di dunia Esports'
-              metric4='Mencari bug pada permainan'
-              metric5='Lainnya'
+              title1='Reasons for Playing Video Games'
+              metric1='For entertainment purpose.'
+              metric2='As a hobby.'
+              metric3='Having career in Esports.'
+              metric4='Finding bugs in games.'
+              metric5='Others.'
               result1='57,1%'
               result2='30,6%'
               result3='8,2%'
@@ -68,15 +78,15 @@ const AnotherIslandArticle = () => {
             />
             <CardChart 
               title1='Pernah Bermain Permainan Arcade'
-              metric1='Ya'
-              metric2='Tidak'
+              metric1='Yes'
+              metric2='No'
               result1='98%'
               result2='2%'
             />
-            <div className="md:mt-[-18px]">
+            <div className="md:mt-[-36px]">
               <CardChart
                 title1='Model Permainan Arcade yang Diinginkan'
-                desc1='Opsi bisa dipilih lebih dari satu model.'
+                desc1='Multiple Choice Options'
                 metric1='Platform Game'
                 metric2='Tower Defense'
                 metric3='Survival'

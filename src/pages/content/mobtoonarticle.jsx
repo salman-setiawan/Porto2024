@@ -33,27 +33,27 @@ const MobtoonArticle = () => {
               title1='Achmad Rivaldo'
               desc1='Developer'
               title2='Goals'
-              desc2='Tampilan aplikasi yang sederhana dengan fungsionalitas yang mudah digunakan.'
+              desc2='A simple application interface with easy-to-use functionality.'
               title3='Pain Points'
-              desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
+              desc3='A background color with a list of manhwa that contrasts or darkens each other (poor color illumination), and for some websites, they use separate accounts to comment on the manhwa being read, which is quite inconvenient.'
             />
             <CardStandard 
               avatar='/assets/avatar.png' 
               title1='Zulfikar Badarudin'
-              desc1='Mahasiswa'
+              desc1='College Student'
               title2='Goals'
-              desc2='Saya membaca manhwa biasanya untuk mengisi waktu kosong, untuk tampilan sendiri saya suka yang minimalis dan mudah digunakan.'
+              desc2='I usually read manhwa to fill my spare time, for the display itself I like minimalist and easy-to-use.'
               title3='Pain Points'
-              desc3='Terkadang beberapa penyedia bacaan memiliki flow yang aneh saat membuka manhwa, bisa saja langsung menampilkan chapter (2 langkah: membuka manhwa, memilih chapter) atau memerlukan langkah tambahan (3 langkah: membuka manhwa, mengakses daftar chapter, memilih chapter). Kemudian banyak popup iklan dan bagian yang tidak diperlukan.'
+              desc3='Sometimes, some reading providers have a strange flow when opening manhwa, it can immediately display the chapter (2 steps: opening manhwa, choosing chapter) or require additional steps (3 steps: opening manhwa, accessing the chapter list, choosing chapter). Then there are many popup ads and unnecessary parts.'
             />
             <CardStandard 
               avatar='/assets/avatar.png' 
               title1='Riski Kurniawan'
-              desc1='Karyawan Swasta'
+              desc1='Private Employee'
               title2='Goals'
-              desc2='Saya ingin mencari dan membaca manhwa secara cepat dan mudah.'
+              desc2='I want to find and read manhwa quickly and easily.'
               title3='Pain Points'
-              desc3='Karena biasanya saya hanya membaca, saya ingin melakukannya tanpa harus melakukan registrasi atau autentikasi akun terlebih dahulu.'
+              desc3='Because I usually only read, I want to do it without having to register or authenticate an account first.'
             />
           </div>
           <Paragraph 

@@ -117,19 +117,19 @@ const EdufamsArticle = () => {
           />
           <div className="flex flex-col space-y-2 w-full">
             <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
-                <DocumentLink
-                  url='https://s.itk.ac.id/edufamsweb'
-                  icon='/assets/document.svg'
-                  text='Website Prototype'
-                />
-              </div>
-              <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
-                <DocumentLink
-                  url='https://s.itk.ac.id/edufamsapp'
-                  icon='/assets/document.svg'
-                  text='Mobile App Prototype'
-                />
-              </div>
+              <DocumentLink
+                url='https://s.itk.ac.id/edufamsweb'
+                icon='/assets/document.svg'
+                text='Website Prototype'
+              />
+            </div>
+            <div className="w-full py-2.5 px-3 bg-[#7070ca] bg-opacity-10">
+              <DocumentLink
+                url='https://s.itk.ac.id/edufamsapp'
+                icon='/assets/document.svg'
+                text='Mobile App Prototype'
+              />
+            </div>
           </div>
           {/* <Paragraph 
             desc1='Setelah menyelesaikan seluruh desain pada tahap prototype, masuk ke tahap terakhir dalam design thinking. Disini mentor ui/ux selaku pengguna mencoba prototype yang sudah dipersiapkan. Adapun beberapa feedback yang didapat saat melakukan testing dijabarkan sebagai berikut.'

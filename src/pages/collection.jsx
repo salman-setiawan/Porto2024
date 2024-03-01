@@ -28,7 +28,7 @@ const CollectionPages = () => {
         )}
 			</div>
 			<div className="fixed bottom-0 w-full flex flex-col none">
-				<div className="flex justify-center">
+				<div className="flex justify-center select">
 					<Tabs onTabChange={handleTabChange} />
 				</div>
 				<div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>

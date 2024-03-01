@@ -41,3 +41,7 @@
 .blinking-text {
   animation: blink 1.2s infinite;
 }
+
+.select:hover {
+  cursor: pointer;
+}
