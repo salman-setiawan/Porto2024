@@ -20,7 +20,7 @@ const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
         <div className='hidden md:block w-fit'>
           <div className="flex flex-col gap-y-1 justify-center items-center">
             <div className="flex">
-              <p className="text-[16px] font-semibold">{title}</p>
+              <p className="text-[16px] pt-[2px] font-semibold">{title}</p>
               {chipdesc &&
                 <ChipShowcase text={chipdesc} bg='bg-[#30FFFC]' />
               }
