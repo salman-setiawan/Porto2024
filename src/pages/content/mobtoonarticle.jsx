@@ -5,6 +5,7 @@ import CardStandard from '../../components/cardcontent/CardStandard'
 import FAB from '../../components/FloatButton'
 import CardEvaluation from '../../components/cardcontent/CardEvaluation'
 import CTAGallery from '../../components/CTAGallery'
+import Copyright from '../../components/Copyright'
 
 const MobtoonArticle = () => {
   return (
@@ -137,9 +138,7 @@ const MobtoonArticle = () => {
         text='See Gallery Design'
       />
       <div className="fixed bottom-0 w-full">
-          <div className="flex justify-center pt-2 bg-[#111111] bg-opacity-90">
-              <p className="text-[10px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
-          </div>
+        <Copyright />
       </div>
     </div>
   )

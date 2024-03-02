@@ -15,7 +15,7 @@ const NoContent = () => {
 
   return (
     <div className="bg-[#111111] min-h-screen flex flex-col justify-center items-center px-8 text-white">
-      <div className='text-[14px] space-y-16 md:w-[700px]'>
+      <div className='text-[16px] space-y-16 md:w-[700px]'>
         <div className="space-y-8">
           <div className="space-y-1">
             <div className="flex space-x-2">

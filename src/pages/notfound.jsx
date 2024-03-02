@@ -15,7 +15,7 @@ const NotFound = () => {
 
   return (
     <div className="bg-[#111111] min-h-screen flex flex-col justify-center items-center px-8 text-white">
-      <div className='text-[14px] space-y-16 md:w-[700px]'>
+      <div className='text-[16px] space-y-16 md:w-[700px]'>
         <div className="space-y-8">
           <img src="/assets/404.png" alt="" className="h-24" />
           <div className="space-y-1">

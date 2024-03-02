@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Tabs from '../components/Tabs';
+import Copyright from '../components/Copyright';
+import Popup from '../components/Popup';
 
 const CollectionPages = () => {
 	const [activeTab, setActiveTab] = useState('Works');
@@ -18,8 +20,11 @@ const CollectionPages = () => {
 						icon1='/assets/person.svg'
 					/>
 				</div>
+				<div className="fixed w-full" style={{ zIndex: 3 }}>
+					<Popup />
+				</div>
 			</div>
-			<div className="fixed bottom-0 w-full flex items-center pb-24">
+			<div className="fixed bottom-0 w-full flex items-center pb-[92px]">
 				{activeTab === 'Works' && (
           <Showcase.Works />
         )}
@@ -32,9 +37,7 @@ const CollectionPages = () => {
 					<Tabs onTabChange={handleTabChange} />
 				</div>
 				<div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
-					<div className="flex justify-center pt-2 bg-[#111111] bg-opacity-90">
-						<p className="text-[10px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
-					</div>
+					<Copyright />
 				</div>
 			</div>
 		</div>

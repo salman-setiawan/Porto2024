@@ -74,17 +74,17 @@ const Profile = () => {
                   desc='I can assist you in designing the user experience, interface, and interactions for the platform/application you desire. Please contact me via the email below.'
                 />
                 <Link to='mailto:salmansetiawan88@gmail.com' target="_blank" rel="noopener noreferrer" className='w-fit'>      
-                  <p className="text-[14px] font-semibold underline underline-offset-2">salmansetiawan88@gmail.com</p>
+                  <p className="text-[16px] font-semibold underline underline-offset-2">salmansetiawan88@gmail.com</p>
                 </Link>
                 <CardProfile
                   desc='Or you can reach out to my social media for a more informal discussion.'
                 />
                 <div className="flex flex-col space-y-1">
                   <Link to='https://www.linkedin.com/in/salman-setiawan/' target="_blank" rel="noopener noreferrer" className='w-fit'>      
-                    <p className="text-[14px] font-semibold underline underline-offset-2">Linkedin</p>
+                    <p className="text-[16px] font-semibold underline underline-offset-2">Linkedin</p>
                   </Link>
                   <Link to='https://www.instagram.com/eisenflux/' target="_blank" rel="noopener noreferrer" className='w-fit'>      
-                    <p className="text-[14px] font-semibold underline underline-offset-2">Instagram</p>
+                    <p className="text-[16px] font-semibold underline underline-offset-2">Instagram</p>
                   </Link>
                 </div>
               </div>

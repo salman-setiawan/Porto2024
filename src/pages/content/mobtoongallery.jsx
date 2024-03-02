@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import FAB from '../../components/FloatButton'
+import Copyright from '../../components/Copyright'
 
 const MobtoonGallery = () => {
   return (
@@ -32,9 +33,7 @@ const MobtoonGallery = () => {
         text='See Process Design'
       />
       <div className="fixed bottom-0 w-full">
-          <div className="flex justify-center pt-2 bg-[#111111] bg-opacity-90">
-              <p className="text-[10px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
-          </div>
+        <Copyright />
       </div>
     </div>
   )
