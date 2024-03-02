@@ -16,24 +16,30 @@ const EduworkGallery = () => {
           <div className="hidden lg:block flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen7.webp" alt="" className="" />
           </div>
           <div className="hidden lg:block flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen2.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen8.webp" alt="" className="" />
           </div>
           <div className="hidden lg:block flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen10.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen11.webp" alt="" className="" />
           </div>
           <div className="hidden md:block lg:hidden flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen8.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen10.webp" alt="" className="" />
           </div>
           <div className="hidden md:block lg:hidden flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen2.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen7.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen11.webp" alt="" className="" />
           </div>
           <div className="md:hidden block flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />
@@ -41,9 +47,11 @@ const EduworkGallery = () => {
             <img src="/assets/eduwork/gallery/screen3.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen4.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen5.webp" alt="" className="" />
-            <img src="/assets/eduwork/gallery/screen6.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen7.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen8.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen10.webp" alt="" className="" />
+            <img src="/assets/eduwork/gallery/screen11.webp" alt="" className="" />
           </div>
-          <div className="pb-16"></div>
         </div>
       </div>
       <div className="fixed bottom-0 w-full">
