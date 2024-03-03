@@ -4,7 +4,7 @@ const CTAGallery = () => {
   return (
     <div>
       <div className="flex justify-center py-2.5 px-3 bg-[#ababff]">
-        <p className="text-black text-[16px] font-bold">
+        <p className="text-black text-[16px] font-semibold">
           To view the results of the UI mockup I created, you can access them in gallery design.
         </p>
       </div>
