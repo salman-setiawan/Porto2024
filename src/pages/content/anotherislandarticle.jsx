@@ -331,7 +331,7 @@ const AnotherIslandArticle = () => {
             desc1="The User Interface (UI) and User Experience (UX) design for the arcade game 'Another Days in the Island' has successfully provided an enjoyable gaming experience. The implementation of the User-Centered Design (UCD) principles in UI and UX development has enhanced user acceptance and engagement. Evaluation involving questionnaires and interviews ensures design alignment with user preferences, resulting in an optimal experience that meets user expectations."
             desc2="In addition, this game is still in the early stages, with many concepts, features, and designs that can be further developed beyond what has been created so far. Thank you for reading until the end."
           />
-          <div className="pb-1"></div>
+          <div className="pb-6 md:pb-1"></div>
         </div>
       </div>
       <FAB

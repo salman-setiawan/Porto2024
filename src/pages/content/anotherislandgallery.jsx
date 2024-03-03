@@ -24,8 +24,8 @@ const AnotherIslandGallery = () => {
           <img src="/assets/anotherisland/gallery/screen8.webp" alt="" className="" />
           <img src="/assets/anotherisland/gallery/screen9.webp" alt="" className="" />
           <img src="/assets/anotherisland/gallery/screen10.webp" alt="" className="" />
+        <div className="pb-12"></div>
         </div>
-        <div className="pb-1"></div>
       </div>
       <FAB
         url='/content/anotherisland/articleview'

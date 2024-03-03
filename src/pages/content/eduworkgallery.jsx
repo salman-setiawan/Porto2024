@@ -52,6 +52,7 @@ const EduworkGallery = () => {
             <img src="/assets/eduwork/gallery/screen10.webp" alt="" className="" />
             <img src="/assets/eduwork/gallery/screen11.webp" alt="" className="" />
           </div>
+        <div className="pb-12"></div>
         </div>
       </div>
       <div className="fixed bottom-0 w-full">

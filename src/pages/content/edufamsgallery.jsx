@@ -66,6 +66,7 @@ const EdufamsGallery = () => {
             <img src="/assets/edufams/gallery/screen22.png" alt="" className="" />
             <img src="/assets/edufams/gallery/screen23.png" alt="" className="" />
           </div>
+          <div className="pb-16"></div>
         </div>
       </div>
       <FAB

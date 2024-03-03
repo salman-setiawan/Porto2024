@@ -15,6 +15,9 @@ const Profile = () => {
   
   return (
     <div className="bg-[#111111] h-full text-white">
+      <video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[3%]'>
+        <source src="/assets/bio/sea.webm" type="video/mp4" />
+      </video>
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
@@ -22,7 +25,7 @@ const Profile = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen md:min-h-screen pt-20 pb-4">
-        <div className="flex flex-col items-center px-4 w-[1360px] overflow-y-auto">
+        <div className="flex flex-col items-center px-4 w-[1360px] overflow-y-auto" style={{ zIndex: 1 }}>
           <div className="flex h-screen sm:items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 gap-y-6 gap-x-10">
               <div className="flex flex-col space-y-6 xl:col-span-4">
@@ -88,9 +91,9 @@ const Profile = () => {
                   </Link>
                 </div>
               </div>
+              <div className="pb-4 md:pb-1"></div>
             </div>
           </div>
-          <div className="pb-1"></div>
         </div>
       </div>
     </div>

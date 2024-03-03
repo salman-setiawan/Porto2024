@@ -28,16 +28,27 @@ const MobtoonArticle = () => {
             desc2='In this case, I conducted user persona research through random interviews with three of my friends, and then summarized their opinions into key points as references in designing the application.'
             desc3='Here are their opinions on their experiences in reading manhwa so far'
           />
-          <div className="grid md:grid-cols-3 gap-2 items-center">
-            <CardStandard
-              avatar='/assets/avatar.png' 
-              title1='Achmad Rivaldo'
-              desc1='Developer'
-              title2='Goals'
-              desc2='A simple application interface with easy-to-use functionality.'
-              title3='Pain Points'
-              desc3='A background color with a list of manhwa that contrasts or darkens each other (poor color illumination), and for some websites, they use separate accounts to comment on the manhwa being read, which is quite inconvenient.'
-            />
+          <div className="grid md:grid-cols-2 gap-2 items-center">
+            <div className="flex flex-col space-y-2">
+              <CardStandard
+                avatar='/assets/avatar.png' 
+                title1='Achmad Rivaldo'
+                desc1='Developer'
+                title2='Goals'
+                desc2='A simple application interface with easy-to-use functionality.'
+                title3='Pain Points'
+                desc3='A background color with a list of manhwa that contrasts or darkens each other (poor color illumination), and for some websites, they use separate accounts to comment on the manhwa being read, which is quite inconvenient.'
+              />
+              <CardStandard 
+                avatar='/assets/avatar.png' 
+                title1='Riski Kurniawan'
+                desc1='Private Employee'
+                title2='Goals'
+                desc2='I want to find and read manhwa quickly and easily.'
+                title3='Pain Points'
+                desc3='Because I usually only read, I want to do it without having to register or authenticate an account first.'
+              />
+            </div>
             <CardStandard 
               avatar='/assets/avatar.png' 
               title1='Zulfikar Badarudin'
@@ -46,15 +57,6 @@ const MobtoonArticle = () => {
               desc2='I usually read manhwa to fill my spare time, for the display itself I like minimalist and easy-to-use.'
               title3='Pain Points'
               desc3='Sometimes, some reading providers have a strange flow when opening manhwa, it can immediately display the chapter (2 steps: opening manhwa, choosing chapter) or require additional steps (3 steps: opening manhwa, accessing the chapter list, choosing chapter). Then there are many popup ads and unnecessary parts.'
-            />
-            <CardStandard 
-              avatar='/assets/avatar.png' 
-              title1='Riski Kurniawan'
-              desc1='Private Employee'
-              title2='Goals'
-              desc2='I want to find and read manhwa quickly and easily.'
-              title3='Pain Points'
-              desc3='Because I usually only read, I want to do it without having to register or authenticate an account first.'
             />
           </div>
           <Paragraph 
@@ -130,7 +132,7 @@ const MobtoonArticle = () => {
               desc3='warna background dengan list manhwa yang saling mencolok atau saling gelap (iluminasi warna tidak baik), dan untuk beberapa website mereka menggunakan akun terpisah untuk melakukan komentar pada manhwa yang dibaca sehingga cukup merepotkan.'
             />
           </div> */}
-          <div className="pb-1"></div>
+          <div className="pb-6 md:pb-1"></div>
         </div>
       </div>
       <FAB

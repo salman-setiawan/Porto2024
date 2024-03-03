@@ -13,6 +13,9 @@ const CollectionPages = () => {
   };
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">
+			<video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[3%]'>
+        <source src="/assets/bio/sea.webm" type="video/mp4" />
+      </video>
 			<div className='flex none'>
 				<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
 					<Navbar 
@@ -37,7 +40,9 @@ const CollectionPages = () => {
 					<Tabs onTabChange={handleTabChange} />
 				</div>
 				<div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
-					<Copyright />
+					<div className="flex justify-center pt-2">
+						<p className="text-[11px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
+					</div>
 				</div>
 			</div>
 		</div>

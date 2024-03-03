@@ -149,7 +149,7 @@ const EdufamsArticle = () => {
           <Paragraph 
             desc1="The pitching activity is conducted alternately at the MKA office with other teams. This activity is also quite an interesting and challenging experience for me because it requires good communication and selling skills to make the mentors interested in the product I have developed."
           />
-          <div className="pb-8"></div>
+          <div className="pb-6 md:pb-1"></div>
         </div>
       </div>
       <FAB
