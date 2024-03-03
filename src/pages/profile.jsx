@@ -22,7 +22,7 @@ const Profile = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen md:min-h-screen pt-20 pb-4">
-        <div className="flex flex-col items-center px-4 w-[1400px] overflow-y-auto">
+        <div className="flex flex-col items-center px-4 w-[1360px] overflow-y-auto">
           <div className="flex h-screen sm:items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 gap-y-6 gap-x-10">
               <div className="flex flex-col space-y-6 xl:col-span-4">
