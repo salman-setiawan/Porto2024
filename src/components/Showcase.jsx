@@ -86,7 +86,7 @@ const Crafts = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Link to="/content/uigallery/galleryview" className='space-y-6 2xl:space-y-[58px]'>       
-          <ImageSlide img='/assets/showcase/showcase5.png' />
+          <ImageSlide img='/assets/showcase/showcase5.webp' />
           <ImageLabel 
             title='My UI Collection' 
             desc1='March 2024' 
