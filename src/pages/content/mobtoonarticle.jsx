@@ -28,7 +28,7 @@ const MobtoonArticle = () => {
             desc2='In this case, I conducted user persona research through random interviews with three of my friends, and then summarized their opinions into key points as references in designing the application.'
             desc3='Here are their opinions on their experiences in reading manhwa so far'
           />
-          <div className="grid grid-cols-3 gap-2 items-center">
+          <div className="grid md:grid-cols-3 gap-2 items-center">
             <CardStandard
               avatar='/assets/avatar.png' 
               title1='Achmad Rivaldo'

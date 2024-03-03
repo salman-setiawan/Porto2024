@@ -84,7 +84,16 @@ const Crafts = () => {
           />
         </Link>
       </SwiperSlide>
-
+      <SwiperSlide>
+        <Link to="/content/uigallery/galleryview" className='space-y-6 2xl:space-y-[58px]'>       
+          <ImageSlide img='/assets/showcase/showcase5.png' />
+          <ImageLabel 
+            title='My UI Collection' 
+            desc1='March 2024' 
+            desc2='Instagram Showcase' 
+          />
+        </Link>
+      </SwiperSlide>
     </Swiper>
   );
 }

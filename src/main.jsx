@@ -17,6 +17,7 @@ import MobtoonGallery from './pages/content/mobtoongallery';
 import EduworkGallery from './pages/content/eduworkgallery';
 import EdufamsArticle from './pages/content/edufamsarticle';
 import EdufamsGallery from './pages/content/edufamsgallery';
+import InstaGallery from './pages/content/instagallery';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/content/edufams/galleryview",
     element: <EdufamsGallery />,
+  },
+  {
+    path: "/content/uigallery/galleryview",
+    element: <InstaGallery />,
   },
   {
     path: "*",
