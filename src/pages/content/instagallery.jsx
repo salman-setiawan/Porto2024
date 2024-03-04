@@ -2,10 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar'
 import Copyright from '../../components/Copyright'
 import ImageSkeleton from '../../components/ImageSkeleton'
+import Slider from '../../components/Slider'
+import CardStandard from '../../components/cardcontent/CardStandard'
 
 const InstaGallery = () => {
   return (
-    <div className="bg-[#111111] min-h-screen text-[#d3d3d3]">
+    <div className="bg111 text-[#d3d3d3]">
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
@@ -13,13 +15,13 @@ const InstaGallery = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
-        <div className="grid jusitfy-start gap-4 px-4 pb-4 overflow-y-auto">
-          <ImageSkeleton 
-            src="/assets/uigallery/screen1.webp"
-          />
-          <ImageSkeleton 
-            src="/assets/uigallery/screen2.webp"
-          />
+        <div className="flex flex-col space-y-4 px-4 overflow-y-auto">
+          <Slider>
+            <img src="/assets/uigallery/screen1.webp" alt="" className='h-[700px] max-w-fit' />
+          </Slider>
+          <Slider>
+            <img src="/assets/uigallery/screen2.webp" alt="" className='h-[700px] max-w-fit' />
+          </Slider>
         </div>
       </div>
       <div className="fixed bottom-0 w-full">

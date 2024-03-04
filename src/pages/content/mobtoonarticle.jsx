@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Paragraph from '../../components/Paragraph'
 import CardStandard from '../../components/cardcontent/CardStandard'
@@ -6,10 +6,11 @@ import FAB from '../../components/FloatButton'
 import CardEvaluation from '../../components/cardcontent/CardEvaluation'
 import CTAGallery from '../../components/CTAGallery'
 import Copyright from '../../components/Copyright'
+import Slider from '../../components/Slider'
 
 const MobtoonArticle = () => {
   return (
-    <div className="bg-[#111111] min-h-screen text-[#d3d3d3]">
+    <div className="bg111 text-[#d3d3d3]">
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
@@ -17,7 +18,7 @@ const MobtoonArticle = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
-        <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
+        <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1='Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.'
             disclaimer='The images used on this website are for illustrative purposes only. All images used are the property of their respective owners.'
@@ -28,27 +29,25 @@ const MobtoonArticle = () => {
             desc2='In this case, I conducted user persona research through random interviews with three of my friends, and then summarized their opinions into key points as references in designing the application.'
             desc3='Here are their opinions on their experiences in reading manhwa so far'
           />
-          <div className="grid md:grid-cols-2 gap-2 items-center">
-            <div className="flex flex-col space-y-2">
-              <CardStandard
-                avatar='/assets/avatar.png' 
-                title1='Achmad Rivaldo'
-                desc1='Developer'
-                title2='Goals'
-                desc2='A simple application interface with easy-to-use functionality.'
-                title3='Pain Points'
-                desc3='A background color with a list of manhwa that contrasts or darkens each other (poor color illumination), and for some websites, they use separate accounts to comment on the manhwa being read, which is quite inconvenient.'
-              />
-              <CardStandard 
-                avatar='/assets/avatar.png' 
-                title1='Riski Kurniawan'
-                desc1='Private Employee'
-                title2='Goals'
-                desc2='I want to find and read manhwa quickly and easily.'
-                title3='Pain Points'
-                desc3='Because I usually only read, I want to do it without having to register or authenticate an account first.'
-              />
-            </div>
+          <Slider>
+            <CardStandard
+              avatar='/assets/avatar.png' 
+              title1='Achmad Rivaldo'
+              desc1='Developer'
+              title2='Goals'
+              desc2='A simple application interface with easy-to-use functionality.'
+              title3='Pain Points'
+              desc3='A background color with a list of manhwa that contrasts or darkens each other (poor color illumination), and for some websites, they use separate accounts to comment on the manhwa being read, which is quite inconvenient.'
+            />
+            <CardStandard 
+              avatar='/assets/avatar.png' 
+              title1='Riski Kurniawan'
+              desc1='Private Employee'
+              title2='Goals'
+              desc2='I want to find and read manhwa quickly and easily.'
+              title3='Pain Points'
+              desc3='Because I usually only read, I want to do it without having to register or authenticate an account first.'
+            />
             <CardStandard 
               avatar='/assets/avatar.png' 
               title1='Zulfikar Badarudin'
@@ -58,7 +57,7 @@ const MobtoonArticle = () => {
               title3='Pain Points'
               desc3='Sometimes, some reading providers have a strange flow when opening manhwa, it can immediately display the chapter (2 steps: opening manhwa, choosing chapter) or require additional steps (3 steps: opening manhwa, accessing the chapter list, choosing chapter). Then there are many popup ads and unnecessary parts.'
             />
-          </div>
+          </Slider>
           <Paragraph 
             title="Here's The Idea"
             desc1="I am designing a brand called 'mobtoon', which is short for mobile cartoon. mobtoon is a mobile-based application for reading web comic. In this design, my objective is to create an engaging and intuitive user interface for its users."

@@ -4,7 +4,7 @@ import Copyright from '../../components/Copyright'
 
 const EduworkGallery = () => {
   return (
-    <div className="bg-[#111111] min-h-screen text-[#d3d3d3]">
+    <div className="bg111 text-[#d3d3d3]">
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'

@@ -7,10 +7,11 @@ import FAB from '../../components/FloatButton'
 import CardChart from '../../components/cardcontent/CardChart'
 import CTAGallery from '../../components/CTAGallery'
 import Copyright from '../../components/Copyright'
+import Slider from '../../components/Slider'
 
 const AnotherIslandArticle = () => {
   return (
-    <div className="bg-[#111111] min-h-screen text-[#d3d3d3]">
+    <div className="bg111 text-[#d3d3d3]">
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
@@ -18,7 +19,7 @@ const AnotherIslandArticle = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
-        <div className="flex flex-col items-center space-y-8 px-4 md:w-[720px] overflow-y-auto">
+        <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1="This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology. You can play this game on the link down below."
             disclaimer="This game can be play on PC only using mouse and keyboard for the controller."
@@ -102,8 +103,8 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             desc1="To understand the participants more deeply, the next stage is creating user personas to gain a clear understanding of what users are currently experiencing and needing. Here is an example of the user personas that have been created."
           />
-          <div className="grid grid-cols-2 gap-2">
-            <CardStandard 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+            <CardStandard
               avatar='/assets/avatar.png' 
               title1='Rudi'
               desc1='College Student, 21 Years Old'
@@ -130,7 +131,7 @@ const AnotherIslandArticle = () => {
             title='Specify Context of Use.'
             desc1="The results obtained from the questionnaire participants will be used to identify user preferences in the game to be developed. This points will be used as references in the design of the Another Day in the Island arcade game. Here are the key points."
           />
-          <div className="grid grid-cols-2 gap-2 items-start">
+          <Slider>
             <CardStandard 
               title1='Point 1'
               desc1='The majority of players want games that can entertain them.'
@@ -147,7 +148,7 @@ const AnotherIslandArticle = () => {
               title1='Point 4'
               desc1="From the player's perspective, they want to play something engaging and simple games that reduce their fatigue."
             />
-          </div>
+          </Slider>
           <Paragraph 
             title='Specify Requirement.'
             desc1="In this stage, the researcher will establish the necessary requirements for the game design by conducting research on competitors, such as similar or related games. The research is carried out to understand how their products function, identify areas for improvement, and create features that are more appealing than those of competitors."

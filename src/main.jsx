@@ -6,12 +6,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+
 import IntroPages from './pages/intro';
 import CollectionPages from './pages/collection';
 import Profile from './pages/profile';
+import NotFound from './pages/notfound';
 import AnotherIslandArticle from './pages/content/anotherislandarticle';
 import AnotherIslandGallery from './pages/content/anotherislandgallery';
-import NotFound from './pages/notfound';
 import MobtoonArticle from './pages/content/mobtoonarticle';
 import MobtoonGallery from './pages/content/mobtoongallery';
 import EduworkGallery from './pages/content/eduworkgallery';
