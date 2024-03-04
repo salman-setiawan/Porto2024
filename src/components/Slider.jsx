@@ -21,12 +21,13 @@ const Slider = ({children}) => {
   }, []);
 
   return (
-    <div className='w-full'>
+    <div>
       <div className="flex flex-col space-y-2 overflow-hidden">
-        <motion.div ref={carousel} className='carousel flex space-x-2'>
+        <motion.div ref={carousel} className='carousel flex'>
           <motion.div 
             drag='x'
-            dragConstraints={{ right: 0, left: -width }} 
+            dragConstraints={{ right: 0, left: -width }}
+            className='flex space-x-2' 
           >
             {children}
           </motion.div>

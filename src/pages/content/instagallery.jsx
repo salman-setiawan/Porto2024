@@ -15,13 +15,19 @@ const InstaGallery = () => {
         />
       </div>
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">
-        <div className="flex flex-col space-y-4 px-4 overflow-y-auto">
-          <Slider>
-            <img src="/assets/uigallery/screen1.webp" alt="" className='h-[700px] max-w-fit' />
-          </Slider>
-          <Slider>
-            <img src="/assets/uigallery/screen2.webp" alt="" className='h-[700px] max-w-fit' />
-          </Slider>
+        <div className="px-4 overflow-y-auto">
+          <div className="flex flex-col space-y-4 lg:hidden">
+            <Slider>
+              <img src="/assets/uigallery/screen1.webp" alt="" className='h-[640px] max-w-fit' />
+            </Slider>
+            <Slider>
+              <img src="/assets/uigallery/screen2.webp" alt="" className='h-[640px] max-w-fit' />
+            </Slider>
+          </div>
+          <div className="flex-col space-y-4 hidden lg:block">
+            <img src="/assets/uigallery/screen1.webp" alt="" className='' />
+            <img src="/assets/uigallery/screen2.webp" alt="" className='' />
+          </div>
         </div>
       </div>
       <div className="fixed bottom-0 w-full">
