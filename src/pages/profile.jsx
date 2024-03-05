@@ -16,7 +16,7 @@ const Profile = () => {
   
   return (
     <div className="bg-[#111111] h-full text-white">
-      <video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[3%]'>
+      <video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[5%]'>
         <source src="/assets/bio/sea.webm" type="video/mp4" />
       </video>
         <div className="fixed top-0 w-full">

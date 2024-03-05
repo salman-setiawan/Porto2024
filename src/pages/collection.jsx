@@ -14,7 +14,7 @@ const CollectionPages = () => {
   };
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">
-			<video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[3%]'>
+			<video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[5%]'>
         <source src="/assets/bio/sea.webm" type="video/mp4" />
       </video>
 			<Fade>

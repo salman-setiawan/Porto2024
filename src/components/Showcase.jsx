@@ -30,12 +30,6 @@ const Works = () => {
           />
         </Link>
       </SwiperSlide>
-      {/* <SwiperSlide>
-        <Link to="/content/dekat/galleryview" className='space-y-8'>
-          <ImageSlide img='/assets/craft5.png' />
-          <ImageLabel title='DEKAT Website Page' desc1='Ghazi Teknologi Indonesia' desc2='Personal Works' />
-        </Link>
-      </SwiperSlide> */}
       <SwiperSlide>
         <Link to="/content/edufams/articleview" className='space-y-6 2xl:space-y-[58px]'>
           <ImageSlide img='/assets/showcase/showcase4.webp' />
@@ -62,18 +56,7 @@ const Crafts = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
-        <Link to="/content/mobtoon/articleview" className='space-y-6 2xl:space-y-[58px]'>        
-          <ImageSlide img='/assets/showcase/showcase1.webp' />
-          <ImageLabel 
-            title='mobtoon' 
-            desc1='January 2024' 
-            desc2='Comic App' 
-            chipdesc='With UX Case' 
-          />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=''>
         <Link to="/content/anotherisland/articleview" className='space-y-6 2xl:space-y-[58px]'>       
           <ImageSlide img='/assets/showcase/showcase2.webp' />
           <ImageLabel 
@@ -91,6 +74,17 @@ const Crafts = () => {
             title='My UI Collection' 
             desc1='March 2024' 
             desc2='Instagram Showcase' 
+          />
+        </Link>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Link to="/content/mobtoon/articleview" className='space-y-6 2xl:space-y-[58px]'>        
+          <ImageSlide img='/assets/showcase/showcase1.webp' />
+          <ImageLabel 
+            title='mobtoon' 
+            desc1='January 2024' 
+            desc2='Comic App' 
+            chipdesc='With UX Case' 
           />
         </Link>
       </SwiperSlide>

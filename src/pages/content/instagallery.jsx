@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Copyright from '../../components/Copyright'
 import ImageSkeleton from '../../components/ImageSkeleton'
 import Slider from '../../components/Slider'
-import CardStandard from '../../components/cardcontent/CardStandard'
+import FAI from '../../components/FloatButtonTwo'
 
 const InstaGallery = () => {
   return (
@@ -30,6 +30,10 @@ const InstaGallery = () => {
           </div>
         </div>
       </div>
+      <FAI
+        url='https://instagram.com/eisenflux'
+        text='Instagram Page'
+      />
       <div className="fixed bottom-0 w-full">
         <Copyright />
       </div>
