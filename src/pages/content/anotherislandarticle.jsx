@@ -8,6 +8,7 @@ import CardChart from '../../components/cardcontent/CardChart'
 import CTAGallery from '../../components/CTAGallery'
 import Copyright from '../../components/Copyright'
 import Slider from '../../components/Slider'
+import Quote from '../../components/Quote'
 
 const AnotherIslandArticle = () => {
   return (
@@ -45,7 +46,8 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             title='Identify Need.'
             desc1="The needs identification stage is where the researcher identifies the requirements that users will have while playing the designed arcade game. A questionnaire can serve as a tool to assist the researcher in the process of identifying user needs throughout the project."
-            desc2="The questions presented to participants consist of several sections. The first part includes questions about the participants' profiles, such as age range, their preferences for games and reasons behind them, and the players' experiences with arcade games. The second part involves questions from the participants' perspective on arcade games in terms of gameplay, visuals, overall impressions, and finally, their preference for the desired game model to be developed. Here are the questionnaire results successfully collected as of February 4, 2023"
+            desc2="The questions presented to participants consist of several sections. The first part includes questions about the participants' profiles, such as age range, their preferences for games and reasons behind them, and the players' experiences with arcade games. The second part involves questions from the participants' perspective on arcade games in terms of gameplay, visuals, overall impressions, and finally, their preference for the desired game model to be developed."
+            desc3="Here are the questionnaire results successfully collected as of February 4, 2023"
           />
           <div className="w-full grid md:grid-cols-2 gap-2 items-start">
             <CardChart 
@@ -85,7 +87,7 @@ const AnotherIslandArticle = () => {
               result1='98%'
               result2='2%'
             />
-            <div className="md:mt-[-36px]">
+            <div className="md:mt-[-22px]">
               <CardChart
                 title1='Model Permainan Arcade yang Diinginkan'
                 desc1='Multiple Choice Options'
@@ -103,29 +105,57 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             desc1="To understand the participants more deeply, the next stage is creating user personas to gain a clear understanding of what users are currently experiencing and needing. Here is an example of the user personas that have been created."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
-            <CardStandard
-              avatar='/assets/avatar.png' 
-              title1='Rudi'
-              desc1='College Student, 21 Years Old'
-              title2='Personality'
-              desc2='Introvert, enjoys playing games of various genres, especially retro/classic games.'
-              title3='Goals'
-              desc3='Wants to explore more interesting games to play. Enjoys completing games by collecting achievements, achieving the highest possible score, and even reaching the top rank if possible.'
-              title4='Frustation'
-              desc4='Rudi sometimes gets easily bored, and he really wants to try games with classic concepts but with modern design and sensations.'
-            />
-            <CardStandard 
-              avatar='/assets/avatar.png' 
-              title1='Anna'
-              desc1='Tutor, 24 Years Old'
-              title2='Personality'
-              desc2='Extrovert, currently working as a tutor on an educational platform. He also has other hobbies such as watching dramas and listening to music during his free time.'
-              title3='Goals'
-              desc3='Seeking entertainment to relieve fatigue from daily life as a tutor by playing casual games while enhancing skills and abilities in gaming.'
-              title4='Frustation'
-              desc4='Rudi sometimes gets easily bored, and he really wants to try a game with a classic concept but with a more modern design and sensation.'
-            />
+          <div className="md:hidden">
+            <Slider>
+              <CardStandard
+                avatar='/assets/avatar.png' 
+                title1='Rudi'
+                desc1='College Student, 21 Years Old'
+                title2='Personality'
+                desc2='Introvert, enjoys playing games of various genres, especially retro/classic games.'
+                title3='Goals'
+                desc3='Wants to explore more interesting games to play. Enjoys completing games by collecting achievements, achieving the highest possible score, and even reaching the top rank if possible.'
+                title4='Frustation'
+                desc4='Rudi sometimes gets easily bored, and he really wants to try games with classic concepts but with modern design and sensations.'
+              />
+              <CardStandard 
+                avatar='/assets/avatar.png' 
+                title1='Anna'
+                desc1='Tutor, 24 Years Old'
+                title2='Personality'
+                desc2='Extrovert, currently working as a tutor on an educational platform. He also has other hobbies such as watching dramas and listening to music during his free time.'
+                title3='Goals'
+                desc3='Seeking entertainment to relieve fatigue from daily life as a tutor by playing casual games while enhancing skills and abilities in gaming.'
+                title4='Frustation'
+                desc4='Rudi sometimes gets easily bored, and he really wants to try a game with a classic concept but with a more modern design and sensation.'
+              />
+            </Slider>
+          </div>
+          <div className="hidden md:block">
+            <div className="grid grid-cols-2 gap-2 items-center">
+              <CardStandard
+                avatar='/assets/avatar.png' 
+                title1='Rudi'
+                desc1='College Student, 21 Years Old'
+                title2='Personality'
+                desc2='Introvert, enjoys playing games of various genres, especially retro/classic games.'
+                title3='Goals'
+                desc3='Wants to explore more interesting games to play. Enjoys completing games by collecting achievements, achieving the highest possible score, and even reaching the top rank if possible.'
+                title4='Frustation'
+                desc4='Rudi sometimes gets easily bored, and he really wants to try games with classic concepts but with modern design and sensations.'
+              />
+              <CardStandard 
+                avatar='/assets/avatar.png' 
+                title1='Anna'
+                desc1='Tutor, 24 Years Old'
+                title2='Personality'
+                desc2='Extrovert, currently working as a tutor on an educational platform. He also has other hobbies such as watching dramas and listening to music during his free time.'
+                title3='Goals'
+                desc3='Seeking entertainment to relieve fatigue from daily life as a tutor by playing casual games while enhancing skills and abilities in gaming.'
+                title4='Frustation'
+                desc4='Rudi sometimes gets easily bored, and he really wants to try a game with a classic concept but with a more modern design and sensation.'
+              />
+            </div>
           </div>
           <Paragraph 
             title='Specify Context of Use.'
@@ -156,7 +186,7 @@ const AnotherIslandArticle = () => {
           />
           <div className="flex flex-col space-y-2.5">
             <img src="/assets/anotherisland/article/content2.webp" alt="" className="w-full" />
-            <div className="grid grid-cols-2 space-x-2 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
               <CardStandard 
                 title1='Game'
                 desc1='ARCADE GAME SERIES: GALAGA'
@@ -208,7 +238,7 @@ const AnotherIslandArticle = () => {
             <CTAGallery />
           </div>
           <Paragraph 
-            title='Evaluasi Desain.'
+            title='Evaluation Design.'
             desc1="The goal of this evaluation is to gather player opinions on the built game through prepared questions and understand what players feel while playing. This evaluation will be conducted iteratively to determine whether the conducted evaluations are satisfactory or not."
           />
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -223,7 +253,7 @@ const AnotherIslandArticle = () => {
               title1='Participant'
               metric1='Male'
               metric2='Female'
-              metric3='Total'
+              metric3='Total Participant'
               result1='6'
               result2='4'
               result3='10'
@@ -263,7 +293,7 @@ const AnotherIslandArticle = () => {
               title1='Memorability'
               desc1='How easy is it to understand the flow of this game?'
             />
-            <div className="md:mt-[-54px]">
+            <div className="md:mt-[-64px]">
               <CardStandard 
                 title1='Efficiency'
                 desc1="How easy is it to understand the information in this game?"
@@ -273,7 +303,7 @@ const AnotherIslandArticle = () => {
           <Paragraph 
             desc1="Players will also be asked for reviews and feedback in the form of criticisms and suggestions that can contribute to the development of the user experience and user interface of this game. Here are the results of the evaluation for the arcade game 'Another Day in the Island' that I obtained."
           />
-          <img src="/assets/anotherisland/article/ces1.webp" alt="" className="" />
+          <img src="/assets/anotherisland/article/ces1.webp" alt="" className="w-full" />
           <Paragraph 
             desc1="The image above illustrates the overall usability level of the game 'Another Day in the Island' with a score of 3.72, which is above average on a scale of 1 (very negative) to 5 (very positive), indicating a good level of usability. The graph shows customer effort scores (CES) on the y-axis (vertical) and usability criteria such as Satisfaction (3.675), Learnability (3.2), Efficiency (4), and Memorability (4.1) on the x-axis (horizontal)."
             desc2='The next stage is processing data from open-ended questions such as reviews and feedback from players. The results have been selected based on the similarity of opinions provided by players. Here are some examples of the feedback results that have been collected.'
@@ -299,9 +329,63 @@ const AnotherIslandArticle = () => {
             />
           </div>
           <Paragraph 
-            desc1="From the evaluation results, the next step will focus on improving user experience and user interface, as well as fixing bugs that disrupt players' comfort during gameplay. This improvement process will take approximately 2 weeks, involving stages such as analysis and determination of enhancements to be made, followed by retesting with the updated version among previous players. Below are the results obtained from this second evaluation."
+            desc1="From the evaluation results, the next step will focus on improving user experience and user interface. Here are the process and decision that I take on the design improvement."
+            desc2="The results of the collected feedback will then be incorporated into the development of a tool to determine the prioritization of values versus efforts to assist designers in making better decisions."
           />
-          <img src="/assets/anotherisland/article/ces2.webp" alt="" className="" />
+          <img src="/assets/anotherisland/article/ev.webp" alt="" className="w-full" />
+          <CardStandard 
+              title1='Description of the analysis'
+              desc1="Improvements to be made include enhancing all features in the green area, as they impact player experience in the game and can be implemented quickly."
+              desc2="Enhancements in the yellow area will include a tutorial stage to ease players into the game and improvements to the tutorial page created previously. Power-up buffs will be added to increase gameplay variety, and excessive enemy spawns in casual stages will be addressed to prevent the game from becoming overly challenging for players."
+              desc3="Improvements that will not be made in the yellow area include the money currency due to the complexity of the feature and the game not yet needing it. The wide gap in difficulty between casual and hell levels will remain, as the hell levels are intentionally designed to be extremely challenging for players seeking extreme difficulty."
+              desc4="No enhancements will be made in the red area due to low urgency and requiring significant resources for development."
+            />
+          <Paragraph 
+            desc1="From the analysis above, the improvements to be made can be seen in the following points."
+          />
+          <div className="flex flex-col space-y-2">
+            <Quote 
+              text="Occasionally occurring bugs that disrupt players' comfort during gameplay have been identified. One bug occurs in the hell level where bullets continue to spawn at the position of a defeated monster. Additionally, there are issues with the background and sound effects settings not functioning properly during gameplay. To address these issues and ensure players can enjoy a smooth experience, adjustments will be made to the game's event sheet."
+            />
+            <Quote 
+              text={(
+                <>
+                  <p>Improvement involves creating a specific stage dedicated to providing gameplay guidance in the game "Another Day in the Island," as depicted in the image below.</p>
+                  <img src="/assets/anotherisland/article/fix1.webp" alt="" className="w-full py-4" />
+                  <p>The image above shows the tutorial page accessible from the main menu. However, due to a lack of player interest in accessing this page, improvements have been made as depicted in the image below.</p>
+                  <img src="/assets/anotherisland/article/fix2.webp" alt="" className="w-full py-4" />
+                  <img src="/assets/anotherisland/article/fix3.webp" alt="" className="w-full py-4" />
+                  <img src="/assets/anotherisland/article/fix4.webp" alt="" className="w-full py-4" />
+                  <p>The two images above represent the improvement of the game guide from regular information to playable stages. These tutorial stages are intended for players who find the game challenging, allowing them to play these stages first. This feature also adds variation in difficulty levels, including easy, medium, and hard levels.</p>
+                  <img src="/assets/anotherisland/article/fix5.webp" alt="" className="w-full py-4" />
+                  <p>Changes have been made to the main menu layout by removing the guide button. Additionally, a few gameplay instructions have been incorporated into the casual stages for players who want to bypass the tutorial stage.</p>
+                </>
+              )}
+            />
+            <Quote 
+              text={(
+                <>
+                  <p>Designing a power-up system involves incorporating buffs to enhance the game's variety, as illustrated in the image below.</p>
+                  <img src="/assets/anotherisland/article/fix6.webp" alt="" className="w-full py-4" />
+                  <p>The image above illustrates that after a player defeats a monster in an area, the monster will drop an orb with a small probability, as depicted. Once a player obtains this orb, they will receive a buff effect, as shown in the image below.</p>
+                  <img src="/assets/anotherisland/article/fix7.webp" alt="" className="w-full py-4" />
+                  <p>The image above depicts the player's condition upon receiving the shield buff, where the player will be protected by a large spherical shield for several seconds. This shield will destroy anything that comes into contact with it, such as monsters or bullets from monsters.</p>
+                </>
+              )}
+            />
+            <Quote 
+              text={(
+                <>
+                  <p>Lastly, at the beginning of the game, a page is designed to display a warning about photosensitivity symptoms, allowing players with similar symptoms to choose to avoid the game. The interface can be seen in the image below.</p>
+                  <img src="/assets/anotherisland/article/fix8.webp" alt="" className="w-full py-4" />
+                </>
+              )}
+            />
+          </div>
+          <Paragraph 
+            desc1="The final step is to report and discuss the decisions that have been made. The last stage involves direct interaction with players regarding the improvements that have been implemented. Below are the results obtained from this second evaluation."
+          />
+          <img src="/assets/anotherisland/article/ces2.webp" alt="" className="w-full" />
           <Paragraph 
             desc1="The above image compares the evaluation data 1 and 2 for the game 'Another Day in the Island,' showing a difference in overall usability. Evaluation 1 recorded a score of 3.72, while Evaluation 2 indicates an improvement with a score of 4.14. This evaluation suggests that the game has undergone improvements in usability between the two evaluations. In the comparison chart, it can be seen that usability criteria such as satisfaction, learnability, efficiency, and memorability also experienced overall improvement. Satisfaction increased from 3.68 to 4.03, learnability from 3.1 to 3.7, efficiency from 4.0 to 4.3, and memorability from 4.1 to 4.55. The column comparison chart visualizes this improvement clearly, highlighting the progress achieved in each usability aspect."
             desc2='The changes and improvements implemented between Evaluation 1 and 2 have successfully enhanced the usability level of each criterion, providing a better gaming experience for users of Another Day in the Island.'
@@ -328,7 +412,7 @@ const AnotherIslandArticle = () => {
             />
           </div>
           <Paragraph 
-            title='End of the story.'
+            title='Aftermath.'
             desc1="The User Interface (UI) and User Experience (UX) design for the arcade game 'Another Days in the Island' has successfully provided an enjoyable gaming experience. The implementation of the User-Centered Design (UCD) principles in UI and UX development has enhanced user acceptance and engagement. Evaluation involving questionnaires and interviews ensures design alignment with user preferences, resulting in an optimal experience that meets user expectations."
             desc2="In addition, this game is still in the early stages, with many concepts, features, and designs that can be further developed beyond what has been created so far. Thank you for reading until the end."
           />

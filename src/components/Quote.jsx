@@ -4,8 +4,8 @@ const Quote = ({text, author}) => {
   return (
     <div>
       <div className="flex">
-        <div className="bg-[#A6D474] w-4"></div>
-        <div className="bg-[#A6D474] bg-opacity-10 p-4">
+        <div className="bg-[#A6D474] w-[4px]"></div>
+        <div className="bg-[#A6D474] w-full bg-opacity-10 p-4">
           <p className="text-[16px] italic pl-2">{text}</p>
           {author &&
             <p className="text-[16px]">{author}</p>

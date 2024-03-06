@@ -10,27 +10,27 @@ const Paragraph = ({title, desc1, desc2, desc3, desc4, disclaimer}) => {
           </p>
         }
         {desc1 &&        
-          <p className="text-[16px] text-[#d3d3d3]">
+          <p className="text-[16px] text-[#d3d3d3] text-justify">
             {desc1}
           </p>
         }
         {desc2 &&        
-          <p className="text-[16px] text-[#d3d3d3]">
+          <p className="text-[16px] text-[#d3d3d3] text-justify">
             {desc2}
           </p>
         }
         {desc3 &&        
-          <p className="text-[16px] text-[#d3d3d3]">
+          <p className="text-[16px] text-[#d3d3d3] text-justify">
             {desc3}
           </p>
         }
         {desc4 &&        
-          <p className="text-[16px] text-[#d3d3d3]">
+          <p className="text-[16px] text-[#d3d3d3] text-justify">
             {desc4}
           </p>
         }
         {disclaimer &&        
-          <p className="text-[16px] text-[#FF8F8F]">
+          <p className="text-[16px] text-[#FF8F8F] text-justify">
             {disclaimer}
           </p>
         }

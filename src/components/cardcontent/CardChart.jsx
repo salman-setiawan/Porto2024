@@ -12,7 +12,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
               </p>
             }
             {desc1 &&          
-              <p className="text-[12px] text-[#b0b0b0]">
+              <p className="text-[14px] text-[#B5B5B5]">
                 {desc1}
               </p>
             }
@@ -22,12 +22,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric1 &&        
             <div className='grid grid-cols-2'>
               {metric1 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric1}
                 </p>
               }
               {result1 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result1}
                 </p>
               }
@@ -36,12 +36,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric2 &&        
             <div className='grid grid-cols-2'>
               {metric2 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric2}
                 </p>
               }
               {result2 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result2}
                 </p>
               }
@@ -50,12 +50,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric3 &&        
             <div className='grid grid-cols-2'>
               {metric3 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric3}
                 </p>
               }
               {result3 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result3}
                 </p>
               }
@@ -64,12 +64,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric4 &&        
             <div className='grid grid-cols-2'>
               {metric4 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric4}
                 </p>
               }
               {result4 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result4}
                 </p>
               }
@@ -78,12 +78,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric5 &&        
             <div className='grid grid-cols-2'>
               {metric5 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric5}
                 </p>
               }
               {result5 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result5}
                 </p>
               }
@@ -92,12 +92,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric6 &&        
             <div className='grid grid-cols-2'>
               {metric6 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric6}
                 </p>
               }
               {result6 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result6}
                 </p>
               }
@@ -106,12 +106,12 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           {metric7 &&        
             <div className='grid grid-cols-2'>
               {metric7 &&
-                <p className="text-[12px] text-[#b0b0b0]">
+                <p className="text-[14px] text-[#B5B5B5]">
                   {metric7}
                 </p>
               }
               {result7 &&          
-                <p className="text-[12px] text-white flex w-full justify-end">
+                <p className="text-[14px] text-white flex w-full justify-end">
                   {result7}
                 </p>
               }
@@ -119,7 +119,7 @@ const CardChart = ({metric1, metric2, metric3, metric4, metric5, metric6, metric
           }
         </div>
         {desc2 &&                 
-          <p className="text-[12px] text-[#b0b0b0]">
+          <p className="text-[14px] text-[#B5B5B5]">
             {desc2}
           </p>
         }
