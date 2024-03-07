@@ -19,7 +19,7 @@ const MobtoonArticle = () => {
           text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1='Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.'

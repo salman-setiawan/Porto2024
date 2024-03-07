@@ -14,7 +14,7 @@ const EduworkGallery = () => {
           text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 jusitfy-start gap-4 px-4 overflow-y-auto">
           <div className="hidden lg:block flex-col space-y-4">
             <img src="/assets/eduwork/gallery/screen1.webp" alt="" className="" />

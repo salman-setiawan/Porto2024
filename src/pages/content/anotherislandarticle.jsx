@@ -21,7 +21,7 @@ const AnotherIslandArticle = () => {
           text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1="This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology. You can play this game on the link down below."

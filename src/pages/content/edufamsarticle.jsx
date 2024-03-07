@@ -23,7 +23,7 @@ const EdufamsArticle = () => {
             text2='hire me'
           />
         </div>
-        <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+        <div className="flex justify-center max-h-screen pt-[64px] pb-8">
           <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
             <Paragraph 
               desc1='Here are the results of my project during my internship as a UI/UX Designer at PT. Media Kreasi Abadi (MKA). MKA itself is a company engaged in the creative industry such as application and game development located in Balikpapan, East Kalimantan.'

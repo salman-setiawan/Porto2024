@@ -19,7 +19,7 @@ const EduworkArticle = () => {
           text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="flex flex-col space-y-8 px-4 md:w-[720px] overflow-y-auto">
           <Paragraph 
             desc1='In July, I had the opportunity to do an internship at Eduwork, a Yogyakarta-based education platform company.'

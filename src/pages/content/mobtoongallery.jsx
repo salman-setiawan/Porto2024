@@ -14,7 +14,7 @@ const MobtoonGallery = () => {
           text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:w-[1240px] items-center gap-8 px-4 overflow-y-auto">
           <img src="/assets/mobtoon/gallery/screen1.webp" alt="" className="" />
           <img src="/assets/mobtoon/gallery/screen2.webp" alt="" className="" />
