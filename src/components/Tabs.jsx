@@ -9,7 +9,7 @@ const Tabs = ({ onTabChange }) => {
   };
 
   return (
-    <div className='px-4 pb-10 w-full md:w-[460px]'>
+    <div className='px-4 pb-10 w-full md:w-[440px]'>
       <div className="flex justify-between p-1 bg-[#2b2b45] rounded-lg space-x-2 font-semibold">
         <p
           className={`w-full flex justify-center py-1.5 px-4 rounded-md text-[12px] ${
