@@ -16,7 +16,9 @@ const AnotherIslandArticle = () => {
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
-          icon1='/assets/home.svg'
+          text1='go back'
+          url2='mailto:salmansetiawan88@gmail.com'
+          text2='hire me'
         />
       </div>
       <div className="flex justify-center max-h-screen pt-[70px] pb-8">

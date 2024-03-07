@@ -11,10 +11,12 @@ const InstaGallery = () => {
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
-          icon1='/assets/home.svg'
+          text1='go back'
+          url2='mailto:salmansetiawan88@gmail.com'
+          text2='hire me'
         />
       </div>
-      <div className="flex justify-center max-h-screen pt-[70px] pb-8">
+      <div className="flex justify-center max-h-screen pt-[64px] pb-8">
         <div className="px-4 overflow-y-auto">
           <div className="flex flex-col space-y-4 lg:hidden">
             <Slider>

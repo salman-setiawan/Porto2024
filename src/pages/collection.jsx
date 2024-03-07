@@ -21,7 +21,9 @@ const CollectionPages = () => {
 					<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
 						<Navbar 
 							url1='/bio'
-							icon1='/assets/person.svg'
+							text1='about me'
+							url2='https://read.cv/eisenflux'
+							text2='read.cv'
 						/>
 					</div>
 					<div className="fixed w-full" style={{ zIndex: 3 }}>

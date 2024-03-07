@@ -21,7 +21,7 @@ const Profile = () => {
       <div className="fixed top-0 w-full">
         <Navbar 
           url1='/collection'
-          icon1='/assets/home.svg'
+          text1='go back'
         />
       </div>
       <Fade>
@@ -68,9 +68,11 @@ const Profile = () => {
                     chip1='Figma'
                     chip2='Notion'
                     chip3='Framer'
+                    chip4='Miro'
                     bg1='bg-[#30FFFC]'
                     bg2='bg-[#30FFFC]'
                     bg3='bg-[#30FFFC]'
+                    bg4='bg-[#30FFFC]'
                   />
                 </div>
                 <div className="flex flex-col space-y-6 xl:col-span-3">
