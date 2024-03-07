@@ -21,7 +21,7 @@ const Works = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/eduwork/galleryview" className='space-y-6 2xl:space-y-[58px]'>
+        <Link to="/content/eduwork/articleview" className='space-y-6 2xl:space-y-[58px]'>
           <ImageSlide img='/assets/showcase/showcase3.webp' />
           <ImageLabel 
             title='Eduwork Opportunity Page' 

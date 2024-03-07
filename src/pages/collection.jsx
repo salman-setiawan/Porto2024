@@ -5,18 +5,17 @@ import Tabs from '../components/Tabs';
 import Copyright from '../components/Copyright';
 import Popup from '../components/Popup';
 import Fade from '../components/motion/Fade';
+import BGVid from '../components/motion/BGVid';
 
 const CollectionPages = () => {
 	const [activeTab, setActiveTab] = useState('Works');
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
+	const handleTabChange = (tab) => {
+		setActiveTab(tab);
+	};
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">
-			<video autoPlay muted loop className='absolute min-h-screen max-h-full w-full object-cover opacity-[5%]'>
-        <source src="/assets/bio/sea.webm" type="video/mp4" />
-      </video>
+			<BGVid />
 			<Fade>
 				<div className='flex none'>
 					<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>

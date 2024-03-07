@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Copyright from '../../components/Copyright'
+import FAB from '../../components/FloatButton'
 
 const EduworkGallery = () => {
   return (
@@ -55,6 +56,10 @@ const EduworkGallery = () => {
         <div className="pb-12"></div>
         </div>
       </div>
+      <FAB
+        url='/content/eduwork/articleview'
+        text='See Process Design'
+      />
       <div className="fixed bottom-0 w-full">
         <Copyright />
       </div>

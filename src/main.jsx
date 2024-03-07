@@ -19,6 +19,7 @@ import EduworkGallery from './pages/content/eduworkgallery';
 import EdufamsArticle from './pages/content/edufamsarticle';
 import EdufamsGallery from './pages/content/edufamsgallery';
 import InstaGallery from './pages/content/instagallery';
+import EduworkArticle from './pages/content/eduworkarticle';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/content/anotherisland/galleryview",
     element: <AnotherIslandGallery />,
+  },
+  {
+    path: "/content/eduwork/articleview",
+    element: <EduworkArticle />,
   },
   {
     path: "/content/eduwork/galleryview",
