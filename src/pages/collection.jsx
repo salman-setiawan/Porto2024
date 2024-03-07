@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Tabs from '../components/Tabs';
-import Copyright from '../components/Copyright';
 import Popup from '../components/Popup';
 import Fade from '../components/motion/Fade';
 import BGVid from '../components/motion/BGVid';
