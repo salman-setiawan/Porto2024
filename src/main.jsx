@@ -20,6 +20,7 @@ import EdufamsArticle from './pages/content/edufamsarticle';
 import EdufamsGallery from './pages/content/edufamsgallery';
 import InstaGallery from './pages/content/instagallery';
 import EduworkArticle from './pages/content/eduworkarticle';
+import DuaDelapansArticle from './pages/content/duadelapansarticle';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
   {
     path: "/content/edufams/galleryview",
     element: <EdufamsGallery />,
+  },
+  {
+    path: "/content/duadelapans/articleview",
+    element: <DuaDelapansArticle />,
   },
   {
     path: "/content/uigallery/galleryview",

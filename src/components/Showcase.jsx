@@ -36,8 +36,17 @@ const Works = () => {
           <ImageLabel 
             title='EduFams' 
             desc1='PT. Media Kreasi Abadi (Internship)' 
-            desc2='Personal Works' 
-            chipdesc='With UX Case' 
+            desc2='Personal Works'  
+          />
+        </Link>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Link to="/content/duadelapans/articleview" className='space-y-6 2xl:space-y-[58px]'>
+          <ImageSlide img='/assets/showcase/showcase6.webp' />
+          <ImageLabel 
+            title='Catalog Book Website' 
+            desc1='CV. Dua Delapan September (Freelance)' 
+            desc2='Personal Works'  
           />
         </Link>
       </SwiperSlide>
@@ -62,8 +71,7 @@ const Crafts = () => {
           <ImageLabel 
             title='Another Day in the Island' 
             desc1='November 2023' 
-            desc2='Desktop Arcade Game' 
-            chipdesc='With UX Case' 
+            desc2='Desktop Arcade Game'  
           />
         </Link>
       </SwiperSlide>
@@ -83,8 +91,7 @@ const Crafts = () => {
           <ImageLabel 
             title='mobtoon' 
             desc1='January 2024' 
-            desc2='Comic App' 
-            chipdesc='With UX Case' 
+            desc2='Comic App'  
           />
         </Link>
       </SwiperSlide>
