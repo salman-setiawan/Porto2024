@@ -28,7 +28,7 @@ const Works = () => {
     } else if (currentSlideIndex === 3) {
       setBgImage('bg-case2'); 
     } else {
-      setBgImage('bg-black');
+      setBgImage('bg-case2');
     }
   };
 
