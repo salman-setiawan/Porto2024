@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import SlideNumber from './SlideNumber';
 
 const Works = () => {
-  const [bgImage, setBgImage] = useState('bg-case1');
+  const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
 
@@ -20,11 +20,11 @@ const Works = () => {
     setCurrentSlide(currentSlideIndex + 1);
     setTotalSlides(swiper.slides.length);
     if (currentSlideIndex === 0) {
-      setBgImage('bg-case1');
+      setBgImage('bg-case2');
     } else if (currentSlideIndex === 1) {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
-      setBgImage('bg-case1'); 
+      setBgImage('bg-case2'); 
     } else if (currentSlideIndex === 3) {
       setBgImage('bg-case2'); 
     } else {
@@ -66,9 +66,9 @@ const Works = () => {
             img='/assets/showcase/showcase4.webp'
           />          
           <ImageLabel 
-            title='Eduwork Mentor Page' 
-            desc1='PT. Talenta Sinergi Group (Internship)' 
-            desc2='Collaboration Works'
+            title='EduFams' 
+            desc1='PT. Media Kreasi Abadi (Internship)' 
+            desc2='Personal Works'
           />
         </Link>
       </SwiperSlide>
@@ -82,9 +82,9 @@ const Works = () => {
             img='/assets/showcase/showcase6.webp'
           /> 
           <ImageLabel 
-            title='Eduwork Mentor Page' 
-            desc1='PT. Talenta Sinergi Group (Internship)' 
-            desc2='Collaboration Works'
+            title='Catalog Book Website' 
+            desc1='CV. Dua Delapan September (Freelance)' 
+            desc2='Personal Work'
           />
         </Link>
       </SwiperSlide>
@@ -93,7 +93,7 @@ const Works = () => {
 };
 
 const Crafts = () => {
-  const [bgImage, setBgImage] = useState('bg-case1');
+  const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
 
@@ -102,11 +102,11 @@ const Crafts = () => {
     setCurrentSlide(currentSlideIndex + 1);
     setTotalSlides(swiper.slides.length);
     if (currentSlideIndex === 0) {
-      setBgImage('bg-case1');
+      setBgImage('bg-case2');
     } else if (currentSlideIndex === 1) {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
-      setBgImage('bg-case1'); 
+      setBgImage('bg-case2'); 
     } else if (currentSlideIndex === 3) {
       setBgImage('bg-case2'); 
     } else {
