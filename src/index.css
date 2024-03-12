@@ -49,6 +49,10 @@
   cursor: pointer;
 }
 
+.cursonone {
+  pointer-events: none;
+}
+
 .bg111 {
   background-color: #111111;
   width: 100vw;
@@ -61,4 +65,18 @@
 
 .carousel {
   cursor: grab;
+}
+
+.bg-case1 {
+  background-image: url('/assets/bgshowcase/showcase1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-case2 {
+  background-image: url('/assets/bgshowcase/showcase2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

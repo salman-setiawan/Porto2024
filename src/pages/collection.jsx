@@ -29,7 +29,7 @@ const CollectionPages = () => {
 						<Popup />
 					</div>
 				</div>
-				<div className="fixed bottom-0 w-full flex items-center pb-[92px]">
+				<div className="w-full h-screen">
 					{activeTab === 'Works' && (
 						<Showcase.Works />
 					)}
@@ -37,15 +37,15 @@ const CollectionPages = () => {
 						<Showcase.Crafts />
 					)}
 				</div>
-				<div className="fixed bottom-0 w-full flex flex-col none">
-					<div className="flex justify-center select">
+				<div className="fixed bottom-0 w-full none" style={{ zIndex: 1 }}>
+					<div className="flex justify-center">
 						<Tabs onTabChange={handleTabChange} />
 					</div>
 				</div>
 			</Fade>
 			<div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
 				<div className="flex justify-center pt-2">
-					<p className="text-[11px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
+					<p className="text-[11px] text-[#B5B5B5] mb-3 cursonone">copyright @ 2024</p>
 				</div>
 			</div>
 		</div>

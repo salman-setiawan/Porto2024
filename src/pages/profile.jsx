@@ -25,8 +25,8 @@ const Profile = () => {
         />
       </div>
       <Fade>
-        <div className="flex justify-center max-h-screen md:min-h-screen pt-20 pb-4">
-          <div className="flex flex-col items-center px-4 md:px-8 w-[1360px] overflow-y-auto" style={{ zIndex: 1 }}>
+        <div className="flex justify-center max-h-screen md:min-h-screen pt-16 pb-4">
+          <div className="flex flex-col items-center px-5 md:px-8 w-[1360px] overflow-y-auto" style={{ zIndex: 1 }}>
             <div className="flex h-screen md:items-center">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-10 gap-y-6 gap-x-10">
                 <div className="flex flex-col space-y-6 xl:col-span-4">
@@ -102,7 +102,7 @@ const Profile = () => {
       </Fade>
       <div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
         <div className="flex justify-center pt-2">
-          <p className="text-[11px] text-[#9F9F9F] mb-3">copyright @ 2024</p>
+          <p className="text-[11px] text-[#B5B5B5] mb-3 cursonone">copyright @ 2024</p>
         </div>
       </div>
     </div>
