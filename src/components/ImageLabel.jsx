@@ -3,7 +3,7 @@ import ChipShowcase from './ChipShowcase'
 
 const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
   return (
-    <div>
+    <div className="fixed bottom-0 pb-[100px]">
       <div className='px-6 md:hidden'>
         <div className="flex justify-between items-center">
           <div>
@@ -16,18 +16,20 @@ const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
           }
         </div>
       </div>
-      <div className="hidden md:block w-fit w-screen">
-        <div className="flex justify-center">
-          <div className="flex flex-col gap-y-1 justify-center items-center">
-            <div className="flex">
-              <p className="text-[16px] pt-[2px] font-semibold">{title}</p>
-              {chipdesc &&
-                <ChipShowcase text={chipdesc} bg='bg-[#30FFFC]' />
-              }
-            </div>
-            <div className='flex flex-col w-fit items-center'>
-              <p className='text-[#B5B5B5] text-[14px]'>{desc1}</p>
-              <p className='text-[#B5B5B5] text-[14px]'>{desc2}</p>
+      <div className="hidden md:block w-fit">
+        <div className="fixed bottom-0 pb-[100px] w-full">
+          <div className="flex justify-center">
+            <div className="flex flex-col gap-y-1 justify-center items-center">
+              <div className="flex">
+                <p className="text-[16px] pt-[2px] font-semibold">{title}</p>
+                {chipdesc &&
+                  <ChipShowcase text={chipdesc} bg='bg-[#30FFFC]' />
+                }
+              </div>
+              <div className='flex flex-col w-fit items-center'>
+                <p className='text-[#B5B5B5] text-[14px]'>{desc1}</p>
+                <p className='text-[#B5B5B5] text-[14px]'>{desc2}</p>
+              </div>
             </div>
           </div>
         </div>

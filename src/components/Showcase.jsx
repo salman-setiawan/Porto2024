@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import SlideNumber from './SlideNumber';
 
 const Works = () => {
-  const [bgImage, setBgImage] = useState('bg-case1');
+  const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
 
@@ -20,13 +20,15 @@ const Works = () => {
     setCurrentSlide(currentSlideIndex + 1);
     setTotalSlides(swiper.slides.length);
     if (currentSlideIndex === 0) {
-      setBgImage('bg-case1');
+      setBgImage('bg-case2');
     } else if (currentSlideIndex === 1) {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
-      setBgImage('bg-case1'); 
+      setBgImage('bg-case2'); 
+    } else if (currentSlideIndex === 3) {
+      setBgImage('bg-case2'); 
     } else {
-      setBgImage('bg-case1');
+      setBgImage('bg-case2');
     }
   };
 
@@ -40,42 +42,18 @@ const Works = () => {
     >
       <SwiperSlide>
         <Link to="/content/eduwork/articleview" className='flex flex-col justify-center'>
-          <div className="fixed top-0 pt-[64px] md:w-screen right-0 pr-6">
-            <SlideNumber
-              current={currentSlide}
-              totalCurrent={totalSlides}
-            />
-          </div>
-          <div className="flex justify-center px-4 pt-24 pb-40 md:pb-52 h-screen">
-            <img src='/assets/showcase/showcase3.webp' alt="showcase-img" className='object-contain' />
-          </div>
-          <div className="fixed bottom-0 pb-[100px]">
-            <ImageLabel 
-              title='Eduwork Mentor Page' 
-              desc1='PT. Talenta Sinergi Group (Internship)' 
-              desc2='Collaboration Works'
-            />
-          </div>
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link to="/content/eduwork/articleview" className='flex flex-col justify-center'>
-          <div className="fixed top-0 pt-[64px] md:w-screen right-0 pr-6">
-            <SlideNumber
-              current={currentSlide}
-              totalCurrent={totalSlides}
-            />
-          </div>
-          <div className="flex justify-center px-4 pt-24 pb-40 md:pb-52 h-screen">
-            <img src='/assets/showcase/showcase3.webp' alt="showcase-img" className='object-contain' />
-          </div>
-          <div className="fixed bottom-0 pb-[100px]">
-            <ImageLabel 
-              title='Eduwork Mentor Page' 
-              desc1='PT. Talenta Sinergi Group (Internship)' 
-              desc2='Collaboration Works'
-            />
-          </div>
+          <SlideNumber
+            current={currentSlide}
+            totalCurrent={totalSlides}
+          />
+          <ImageSlide 
+            img='/assets/showcase/showcase3.webp'
+          />
+          <ImageLabel 
+            title='Eduwork Mentor Page' 
+            desc1='PT. Talenta Sinergi Group (Internship)' 
+            desc2='Collaboration Works'
+          />
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -115,7 +93,7 @@ const Works = () => {
 };
 
 const Crafts = () => {
-  const [bgImage, setBgImage] = useState('bg-case1');
+  const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
 
@@ -124,11 +102,13 @@ const Crafts = () => {
     setCurrentSlide(currentSlideIndex + 1);
     setTotalSlides(swiper.slides.length);
     if (currentSlideIndex === 0) {
-      setBgImage('bg-case1');
+      setBgImage('bg-case2');
     } else if (currentSlideIndex === 1) {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
-      setBgImage('bg-case1'); 
+      setBgImage('bg-case2'); 
+    } else if (currentSlideIndex === 3) {
+      setBgImage('bg-case2'); 
     } else {
       setBgImage('bg-black');
     }
