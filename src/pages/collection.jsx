@@ -4,7 +4,6 @@ import Showcase from '../components/Showcase';
 import Tabs from '../components/Tabs';
 import Popup from '../components/Popup';
 import Fade from '../components/motion/Fade';
-import BGVid from '../components/motion/BGVid';
 
 const CollectionPages = () => {
 	const [activeTab, setActiveTab] = useState('Works');
