@@ -14,7 +14,6 @@ const CollectionPages = () => {
 	};
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">
-			<BGVid />
 			<Fade>
 				<div className='flex none'>
 					<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
