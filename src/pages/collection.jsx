@@ -27,7 +27,7 @@ const CollectionPages = () => {
 						<Popup />
 					</div>
 				</div>
-				<div className="w-full h-screen">
+				<div className="">
 					{activeTab === 'Works' && (
 						<Showcase.Works />
 					)}

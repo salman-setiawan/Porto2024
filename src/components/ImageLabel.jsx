@@ -3,8 +3,8 @@ import ChipShowcase from './ChipShowcase'
 
 const ImageLabel = ({title, desc1, desc2, chipdesc}) => {
   return (
-    <div className="fixed bottom-0 pb-[100px]">
-      <div className='px-6 md:hidden'>
+    <div className="px-6 md:hidden">
+      <div className='fixed bottom-0 pb-[100px]'>
         <div className="flex justify-between items-center">
           <div>
             <p className="text-[14px] font-semibold">{title}</p>
