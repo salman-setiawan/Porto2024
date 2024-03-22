@@ -23,9 +23,9 @@ const CollectionPages = () => {
 							text2='read.cv'
 						/>
 					</div>
-					<div className="fixed w-full" style={{ zIndex: 3 }}>
+					{/* <div className="fixed w-full" style={{ zIndex: 3 }}>
 						<Popup />
-					</div>
+					</div> */}
 				</div>
 				<div className="">
 					{activeTab === 'Works' && (

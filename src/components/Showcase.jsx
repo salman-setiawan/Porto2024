@@ -41,7 +41,7 @@ const Works = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/eduwork/articleview" className='flex flex-col justify-center'>
+        <Link to="/content/eduwork/articleview" className='flex flex-col justify-center carousel'>
           <SlideNumber
             current={currentSlide}
             totalCurrent={totalSlides}
@@ -57,7 +57,7 @@ const Works = () => {
         </Link>
       </SwiperSlide>
       <SwiperSlide>
-        <Link to="/content/edufams/articleview" className='flex flex-col justify-center'>
+        <Link to="/content/edufams/articleview" className='flex flex-col justify-center carousel'>
           <SlideNumber
             current={currentSlide}
             totalCurrent={totalSlides}
@@ -73,7 +73,7 @@ const Works = () => {
         </Link>
       </SwiperSlide>
       <SwiperSlide>
-        <Link to="/content/duadelapans/articleview" className='flex flex-col justify-center'>
+        <Link to="/content/duadelapans/articleview" className='flex flex-col justify-center carousel'>
           <SlideNumber
             current={currentSlide}
             totalCurrent={totalSlides}
@@ -123,7 +123,7 @@ const Crafts = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <Link to="/content/anotherisland/articleview" className='flex flex-col justify-center'>
+        <Link to="/content/anotherisland/articleview" className='flex flex-col justify-center carousel'>
           <SlideNumber
             current={currentSlide}
             totalCurrent={totalSlides}
@@ -139,7 +139,7 @@ const Crafts = () => {
         </Link>
       </SwiperSlide>
       <SwiperSlide>
-        <Link to="/content/uigallery/galleryview" className='flex flex-col justify-center'>
+        <Link to="/content/uigallery/galleryview" className='flex flex-col justify-center carousel'>
           <SlideNumber
             current={currentSlide}
             totalCurrent={totalSlides}
