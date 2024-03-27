@@ -20,49 +20,6 @@ const CollectionPages = () => {
 	const handleTabChange = (tab) => {
 		setActiveTab(tab);
 	};
-
-	const slideInfo = {
-		Works: [
-			{
-				img: '/assets/showcase/showcase3.webp',
-				title: 'Eduwork Mentor Page',
-				desc1: 'PT. Talenta Sinergi Group (Internship)',
-				desc2: 'Collaboration Works',
-			},
-			{
-				img: '/assets/showcase/showcase4.webp',
-				title: 'EduFams',
-				desc1: 'PT. Media Kreasi Abadi (Internship)',
-				desc2: 'Personal Works',
-			},
-			{
-				img: '/assets/showcase/showcase6.webp',
-				title: 'Catalog Book Website',
-				desc1: 'CV. Dua Delapan September (Freelance)',
-				desc2: 'Personal Work',
-			},
-		],
-		Crafts: [
-			{
-				img: '/assets/showcase/showcase2.webp',
-				title: 'Another Day in the Island',
-				desc1: 'November 2023',
-				desc2: 'Desktop Arcade Game',
-			},
-			{
-				img: '/assets/showcase/showcase5.webp',
-				title: 'My UI Collection',
-				desc1: 'March 2024',
-				desc2: 'Instagram Showcase',
-			},
-			{
-				img: '/assets/showcase/showcase1.webp',
-				title: 'mobtoon',
-				desc1: 'January 2024',
-				desc2: 'Comic App',
-			},
-		],
-	};
 	
 	return (
 		<div className="bg-[#111111] min-h-screen text-white flex flex-col">

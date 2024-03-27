@@ -12,18 +12,21 @@ import { Link } from 'react-router-dom';
 const slideInfo = {
   Works: [
     {
+      url: '/content/eduwork/articleview',
       img: '/assets/showcase/showcase3.webp',
       title: 'Eduwork Mentor Page',
       desc1: 'PT. Talenta Sinergi Group (Internship)',
       desc2: 'Collaboration Works',
     },
     {
+      url: '/content/edufams/articleview',
       img: '/assets/showcase/showcase4.webp',
       title: 'EduFams',
       desc1: 'PT. Media Kreasi Abadi (Internship)',
       desc2: 'Personal Works',
     },
     {
+      url: '/content/duadelapans/articleview',
       img: '/assets/showcase/showcase6.webp',
       title: 'Catalog Book Website',
       desc1: 'CV. Dua Delapan September (Freelance)',
@@ -32,18 +35,21 @@ const slideInfo = {
   ],
   Crafts: [
     {
+      url: '/content/anotherisland/articleview',
       img: '/assets/showcase/showcase2.webp',
       title: 'Another Day in the Island',
       desc1: 'November 2023',
       desc2: 'Desktop Arcade Game',
     },
     {
+      url: '/content/uigallery/galleryview',
       img: '/assets/showcase/showcase5.webp',
       title: 'My UI Collection',
       desc1: 'March 2024',
       desc2: 'Instagram Showcase',
     },
     {
+      url: '/content/mobtoon/articleview',
       img: '/assets/showcase/showcase1.webp',
       title: 'mobtoon',
       desc1: 'January 2024',
@@ -52,7 +58,7 @@ const slideInfo = {
   ],
 };
 
-const Works = ({ type, onSlideChange }) => {
+const Works = ({ onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
@@ -86,7 +92,7 @@ const Works = ({ type, onSlideChange }) => {
     >
       {slideInfo.Works.map((slide, index) => (
         <SwiperSlide key={index}>
-          <Link to={`/content/${index}/articleview`} className='flex flex-col justify-center carousel'>
+          <Link to={slide.url} className='flex flex-col justify-center carousel'>
             <ImageSlide img={slide.img} />
             <ImageLabel 
               title={slide.title}
@@ -100,7 +106,7 @@ const Works = ({ type, onSlideChange }) => {
   );
 };
 
-const Crafts = ({ type, onSlideChange }) => {
+const Crafts = ({ onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
@@ -134,7 +140,7 @@ const Crafts = ({ type, onSlideChange }) => {
     >
       {slideInfo.Crafts.map((slide, index) => (
         <SwiperSlide key={index}>
-          <Link to={`/content/${index}/articleview`} className='flex flex-col justify-center carousel'>
+          <Link to={slide.url} className='flex flex-col justify-center carousel'>
             <ImageSlide img={slide.img} />
             <ImageLabel 
               title={slide.title}
