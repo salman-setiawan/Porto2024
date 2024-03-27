@@ -8,9 +8,51 @@ import 'swiper/css/pagination';
 import ImageSlide from './ImageSlide';
 import ImageLabel from './ImageLabel';
 import { Link } from 'react-router-dom';
-import SlideNumber from './SlideNumber';
 
-const Works = () => {
+const slideInfo = {
+  Works: [
+    {
+      img: '/assets/showcase/showcase3.webp',
+      title: 'Eduwork Mentor Page',
+      desc1: 'PT. Talenta Sinergi Group (Internship)',
+      desc2: 'Collaboration Works',
+    },
+    {
+      img: '/assets/showcase/showcase4.webp',
+      title: 'EduFams',
+      desc1: 'PT. Media Kreasi Abadi (Internship)',
+      desc2: 'Personal Works',
+    },
+    {
+      img: '/assets/showcase/showcase6.webp',
+      title: 'Catalog Book Website',
+      desc1: 'CV. Dua Delapan September (Freelance)',
+      desc2: 'Personal Work',
+    },
+  ],
+  Crafts: [
+    {
+      img: '/assets/showcase/showcase2.webp',
+      title: 'Another Day in the Island',
+      desc1: 'November 2023',
+      desc2: 'Desktop Arcade Game',
+    },
+    {
+      img: '/assets/showcase/showcase5.webp',
+      title: 'My UI Collection',
+      desc1: 'March 2024',
+      desc2: 'Instagram Showcase',
+    },
+    {
+      img: '/assets/showcase/showcase1.webp',
+      title: 'mobtoon',
+      desc1: 'January 2024',
+      desc2: 'Comic App',
+    },
+  ],
+};
+
+const Works = ({ type, onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
@@ -25,11 +67,13 @@ const Works = () => {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
       setBgImage('bg-case2'); 
-    } else if (currentSlideIndex === 3) {
-      setBgImage('bg-case2'); 
     } else {
       setBgImage('bg-case2');
     }
+    onSlideChange({ 
+      currentSlide: currentSlideIndex + 1, 
+      totalSlides: swiper.slides.length 
+    });
   };
 
   return (
@@ -40,59 +84,23 @@ const Works = () => {
       onSlideChange={(swiper) => handleSlideChange(swiper)}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
-        <Link to="/content/eduwork/articleview" className='flex flex-col justify-center carousel'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase3.webp'
-          />
-          <ImageLabel 
-            title='Eduwork Mentor Page' 
-            desc1='PT. Talenta Sinergi Group (Internship)' 
-            desc2='Collaboration Works'
-          />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link to="/content/edufams/articleview" className='flex flex-col justify-center carousel'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase4.webp'
-          />          
-          <ImageLabel 
-            title='EduFams' 
-            desc1='PT. Media Kreasi Abadi (Internship)' 
-            desc2='Personal Works'
-          />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link to="/content/duadelapans/articleview" className='flex flex-col justify-center carousel'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase6.webp'
-          /> 
-          <ImageLabel 
-            title='Catalog Book Website' 
-            desc1='CV. Dua Delapan September (Freelance)' 
-            desc2='Personal Work'
-          />
-        </Link>
-      </SwiperSlide>
+      {slideInfo.Works.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <Link to={`/content/${index}/articleview`} className='flex flex-col justify-center carousel'>
+            <ImageSlide img={slide.img} />
+            <ImageLabel 
+              title={slide.title}
+              desc1={slide.desc1}
+              desc2={slide.desc2}
+            />
+          </Link>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
 
-const Crafts = () => {
+const Crafts = ({ type, onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
@@ -107,11 +115,13 @@ const Crafts = () => {
       setBgImage('bg-case2');
     } else if (currentSlideIndex === 2) {
       setBgImage('bg-case2'); 
-    } else if (currentSlideIndex === 3) {
-      setBgImage('bg-case2'); 
     } else {
       setBgImage('bg-black');
     }
+    onSlideChange({ 
+      currentSlide: currentSlideIndex + 1, 
+      totalSlides: swiper.slides.length 
+    });
   };
 
   return (
@@ -122,54 +132,18 @@ const Crafts = () => {
       onSlideChange={(swiper) => handleSlideChange(swiper)}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
-        <Link to="/content/anotherisland/articleview" className='flex flex-col justify-center carousel'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase2.webp'
-          />
-          <ImageLabel 
-            title='Another Day in the Island' 
-            desc1='November 2023' 
-            desc2='Desktop Arcade Game'
-          />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link to="/content/uigallery/galleryview" className='flex flex-col justify-center carousel'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase5.webp'
-          />
-          <ImageLabel 
-            title='My UI Collection' 
-            desc1='March 2024' 
-            desc2='Instagram Showcase' 
-          />
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Link to="/content/mobtoon/articleview" className='flex flex-col justify-center'>
-          <SlideNumber
-            current={currentSlide}
-            totalCurrent={totalSlides}
-          />
-          <ImageSlide 
-            img='/assets/showcase/showcase1.webp'
-          />
-          <ImageLabel 
-            title='mobtoon' 
-            desc1='January 2024' 
-            desc2='Comic App'
-          />
-        </Link>
-      </SwiperSlide>
+      {slideInfo.Crafts.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <Link to={`/content/${index}/articleview`} className='flex flex-col justify-center carousel'>
+            <ImageSlide img={slide.img} />
+            <ImageLabel 
+              title={slide.title}
+              desc1={slide.desc1}
+              desc2={slide.desc2}
+            />
+          </Link>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
