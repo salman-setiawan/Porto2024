@@ -31,14 +31,14 @@ const IntroPages = () => {
   return (
     <div className="bg-[#171616] min-h-screen flex flex-col justify-center items-center px-8 text-white">
       {loading ? (
-        <div className="flex flex-col justify-center items-center space-y-8 md:w-[640px]">
-          <img src="/icon.svg" alt="" className="h-[80px] w-fit" />
-          <p>Loading {progress}%</p>
+        <div className="flex flex-col justify-center items-center md:w-[640px]">
+          <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
+          <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
         </div>
       ) : (
-        <div className='flex flex-col text-[16px] space-y-8 justify-center items-center md:w-[640px]'>
-          <img src="/icon.svg" alt="" className="h-[80px] w-fit" />
-          <p className='blinking-text'>Click anywhere to continue.</p>
+        <div className='flex flex-col text-[16px] space-y-6 md:space-y-8 justify-center items-center md:w-[640px]'>
+          <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
+          <p className='blinking-text text-[14px] md:text-[16px]'>Click anywhere to continue.</p>
         </div>
       )}
       <div className="fixed bottom-0 pb-10 text-center text-[13px] px-6">
