@@ -6,6 +6,7 @@ import Fade from '../components/motion/Fade';
 import SlideNumber from '../components/SlideNumber';
 import ImageLabel from '../components/ImageLabel';
 import ShowcaseContent from '../data/showcase';
+import BGVid from '../components/motion/BGVid';
 
 
 const CollectionPages = () => {
@@ -24,8 +25,9 @@ const CollectionPages = () => {
   };
 
   return (
-    <div className="bg-[#111111] min-h-screen text-white flex flex-col">
+    <div className="bg-[#171616] min-h-screen text-white flex flex-col">
       <Fade>
+				<BGVid />
         <div>
 					<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
 						<Navbar
@@ -35,18 +37,18 @@ const CollectionPages = () => {
 							text2='read.cv'
 						/>
 					</div>
-          <div className="fixed top-0 w-full" style={{ zIndex: 1 }}>
+          <div className="fixed top-0 w-full cursonone" style={{ zIndex: 2 }}>
             <SlideNumber
               current={currentSlide}
               totalCurrent={totalSlides}
 							subject={ShowcaseContent[activeTab][currentSlide - 1].title}
             />
+						<ImageLabel
+							title={ShowcaseContent[activeTab][currentSlide - 1].title}
+							desc1={ShowcaseContent[activeTab][currentSlide - 1].desc1}
+							desc2={ShowcaseContent[activeTab][currentSlide - 1].desc2}
+						/>
           </div>
-					<ImageLabel
-						title={ShowcaseContent[activeTab][currentSlide - 1].title}
-						desc1={ShowcaseContent[activeTab][currentSlide - 1].desc1}
-						desc2={ShowcaseContent[activeTab][currentSlide - 1].desc2}
-					/>
         </div>
         <div className="">
           {activeTab === 'Works' && (

@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom';
 
 const Works = ({ onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
-  const [currentSlide, setCurrentSlide] = useState(1);
-  const [totalSlides, setTotalSlides] = useState(3);
+  const [, setCurrentSlide] = useState(1);
+  const [, setTotalSlides] = useState(3);
 
   const handleSlideChange = (swiper) => {
     const currentSlideIndex = swiper.realIndex;
@@ -55,8 +55,8 @@ const Works = ({ onSlideChange }) => {
 
 const Crafts = ({ onSlideChange }) => {
   const [bgImage, setBgImage] = useState('bg-case2');
-  const [currentSlide, setCurrentSlide] = useState(1);
-  const [totalSlides, setTotalSlides] = useState(3);
+  const [, setCurrentSlide] = useState(1);
+  const [, setTotalSlides] = useState(3);
 
   const handleSlideChange = (swiper) => {
     const currentSlideIndex = swiper.realIndex;
