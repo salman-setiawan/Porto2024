@@ -62,7 +62,7 @@ const CollectionPages = () => {
             />
           )}
         </div>
-        <div className="fixed bottom-0 w-full none" style={{ zIndex: 2 }}>
+        <div className="fixed bottom-0 w-full none pb-10" style={{ zIndex: 2 }}>
           <div className="flex justify-center">
             <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
           </div>

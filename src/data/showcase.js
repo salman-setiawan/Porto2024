@@ -37,7 +37,7 @@ const ShowcaseContent = {
     {
       id: 2,
       img: '/assets/showcase/showcase5.webp',
-      url: '/content/uigallery/galleryeview',
+      url: '/content/uigallery/galleryview',
       title: 'My UI Collection',
       desc1: 'March 2024',
       desc2: 'Instagram Showcase',

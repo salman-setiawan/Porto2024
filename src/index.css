@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Mengubah warna background scrollbar */
 ::-webkit-scrollbar {
   background-color: #686868;
@@ -79,4 +80,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
