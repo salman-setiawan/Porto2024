@@ -26,26 +26,27 @@ const CollectionPages = () => {
   return (
     <div className="bg-[#111111] min-h-screen text-white flex flex-col">
       <Fade>
-        <div className='flex none'>
-          <div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
-            <Navbar
-              url1='/bio'
-              text1='about me'
-              url2='https://read.cv/eisenflux'
-              text2='read.cv'
-            />
+        <div>
+					<div className="fixed top-0 w-full" style={{ zIndex: 2 }}>
+						<Navbar
+							url1='/bio'
+							text1='about me'
+							url2='https://read.cv/eisenflux'
+							text2='read.cv'
+						/>
+					</div>
+          <div className="fixed top-0 w-full" style={{ zIndex: 1 }}>
             <SlideNumber
               current={currentSlide}
               totalCurrent={totalSlides}
+							subject={ShowcaseContent[activeTab][currentSlide - 1].title}
             />
-            <div className="">
-              <ImageLabel
-                title={ShowcaseContent[activeTab][currentSlide - 1].title}
-                desc1={ShowcaseContent[activeTab][currentSlide - 1].desc1}
-                desc2={ShowcaseContent[activeTab][currentSlide - 1].desc2}
-              />
-            </div>
           </div>
+					<ImageLabel
+						title={ShowcaseContent[activeTab][currentSlide - 1].title}
+						desc1={ShowcaseContent[activeTab][currentSlide - 1].desc1}
+						desc2={ShowcaseContent[activeTab][currentSlide - 1].desc2}
+					/>
         </div>
         <div className="">
           {activeTab === 'Works' && (

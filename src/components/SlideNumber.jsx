@@ -1,19 +1,22 @@
 import React from 'react'
 
-const SlideNumber = ({current, totalCurrent}) => {
+const SlideNumber = ({current, totalCurrent, subject}) => {
   return (
-    <div className='fixed top-0 pt-[64px]'>
+    <div className='fixed top-0 pt-[72px]'>
       <div className="w-screen flex justify-between px-6">
         <div className="flex flex-col">
           <p className='text-[12px]'>Drag left or right with mouse or fingers to change slide.</p>
           <p className='text-[12px]'>Click or tap image to see the whole subject content.</p>
           <p className='text-[12px]'>Click or tap tabs to change section.</p>
         </div>
-        <div className="flex space-x-2">
-          <p className='text-[#B5B5B5] text-[12px]'>Slide</p>
-          <p className='text-white text-[12px] font-semibold'>{current}</p>
-          <p className='text-[#B5B5B5] text-[12px]'>of</p>
-          <p className='text-white text-[12px] font-semibold'>{totalCurrent}</p>
+        <div className="flex flex-col items-end">
+          <div className="flex space-x-2 text-[12px]">
+            <p className='text-[#B5B5B5]'>Slide</p>
+            <p className='text-white font-semibold'>{current}</p>
+            <p className='text-[#B5B5B5]'>of</p>
+            <p className='text-white font-semibold'>{totalCurrent}</p>
+          </div>
+          <p className="text-[12px] text-white font-semibold">{subject}</p>
         </div>
       </div>
     </div>
