@@ -67,8 +67,9 @@ const CollectionPages = () => {
         </div>
       </Fade>
       <div className="fixed bottom-0 w-full" style={{ zIndex: 1 }}>
-        <div className="flex justify-center pt-2">
-          <p className="text-[11px] text-[#B5B5B5] mb-3 cursor-none">copyright @ 2024</p>
+        <div className="flex justify-between pt-2 px-6">
+          <p className="text-[11px] text-[#B5B5B5] mb-3 cursor-none">welcome to my uix showcase portfolio</p>
+					<p className="text-[11px] text-[#B5B5B5] mb-3 cursor-none">copyright @ 2024</p>
         </div>
       </div>
     </div>

@@ -5,9 +5,8 @@ const SlideNumber = ({current, totalCurrent, subject}) => {
     <div className='fixed top-0 pt-[72px]'>
       <div className="w-screen flex justify-between px-6">
         <div className="flex flex-col">
-          <p className='text-[12px]'>Drag left or right with mouse or fingers to change slide.</p>
-          <p className='text-[12px]'>Click or tap image to see the whole subject content.</p>
-          <p className='text-[12px]'>Click or tap tabs to change section.</p>
+          <p className='text-[12px]'>Drag left or right the image to change slide.</p>
+          <p className='text-[12px]'>Click or tap the image to see more details.</p>
         </div>
         <div className="flex flex-col items-end">
           <div className="flex space-x-2 text-[12px]">
