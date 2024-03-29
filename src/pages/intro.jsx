@@ -31,7 +31,7 @@ const IntroPages = () => {
   return (
     <div className="bg-[#171616] min-h-screen flex flex-col justify-center items-center px-8 text-white">
       {loading ? (
-        <div className="flex flex-col justify-center items-center md:w-[640px]">
+        <div className="flex flex-col justify-center space-y-6 md:space-y-8 items-center md:w-[640px]">
           <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
           <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
         </div>

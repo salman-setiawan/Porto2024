@@ -10,70 +10,70 @@ const CardStandard = ({avatar, title1, title2, title3, title4, title5, desc1, de
         {desc1 &&        
           <div>
             {title1 &&
-              <p className="font-medium text-[14px] text-white">
+              <div className="font-medium text-[14px] text-white">
                 {title1}
-              </p>
+              </div>
             }
             {desc1 &&          
-              <p className="text-[14px] text-[#B5B5B5]">
+              <div className="text-[14px] text-[#B5B5B5]">
                 {desc1}
-              </p>
+              </div>
             }
           </div>
         }
         {desc2 &&        
           <div>
             {title2 &&
-              <p className="font-medium text-[14px] text-white">
+              <div className="font-medium text-[14px] text-white">
                 {title2}
-              </p>
+              </div>
             }
             {desc2 &&          
-              <p className="text-[14px] text-[#9E9E9E]">
+              <div className="text-[14px] text-[#9E9E9E]">
                 {desc2}
-              </p>
+              </div>
             }
           </div>
         }
         {desc3 &&        
           <div>
             {title3 &&
-              <p className="font-medium text-[14px] text-white">
+              <div className="font-medium text-[14px] text-white">
                 {title3}
-              </p>
+              </div>
             }
             {desc3 &&          
-              <p className="text-[14px] text-[#9E9E9E]">
+              <div className="text-[14px] text-[#9E9E9E]">
                 {desc3}
-              </p>
+              </div>
             }
           </div>
         }
         {desc4 &&        
           <div>
             {title4 &&
-              <p className="font-medium text-[14px] text-white">
+              <div className="font-medium text-[14px] text-white">
                 {title4}
-              </p>
+              </div>
             }
             {desc4 &&          
-              <p className="text-[14px] text-[#9E9E9E]">
+              <div className="text-[14px] text-[#9E9E9E]">
                 {desc4}
-              </p>
+              </div>
             }
           </div>
         }
         {desc5 &&        
           <div>
             {title5 &&
-              <p className="font-medium text-[14px] text-white">
+              <div className="font-medium text-[14px] text-white">
                 {title5}
-              </p>
+              </div>
             }
             {desc5 &&          
-              <p className="text-[14px] text-[#9E9E9E]">
+              <div className="text-[14px] text-[#9E9E9E]">
                 {desc5}
-              </p>
+              </div>
             }
           </div>
         }
