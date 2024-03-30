@@ -15,19 +15,6 @@ const IntroPages = () => {
       });
     };
 
-    const totalAssets = 6; // Total aset gambar yang akan dimuat
-    let loadedAssets = 0;
-
-    const updateProgress = () => {
-      loadedAssets++;
-      const progress = (loadedAssets / totalAssets) * 100;
-      setLoadingProgress(progress);
-
-      if (loadedAssets === totalAssets) {
-        setIsAssetsLoading(false);
-      }
-    };
-
     const assetsToLoad = [
       '/assets/showcase/showcase1.webp',
       '/assets/showcase/showcase2.webp',
@@ -35,6 +22,7 @@ const IntroPages = () => {
       '/assets/showcase/showcase4.webp',
       '/assets/showcase/showcase5.webp',
       '/assets/showcase/showcase6.webp',
+
       '/assets/eduwork/article/teams.png',
       '/assets/eduwork/article/flow.png',
       '/assets/eduwork/article/process1.png',
@@ -50,12 +38,47 @@ const IntroPages = () => {
       '/assets/eduwork/gallery/screen9.webp',
       '/assets/eduwork/gallery/screen10.webp',
       '/assets/eduwork/gallery/screen11.webp',
+
+      '/assets/edufams/article/teams.png',
+      '/assets/edufams/article/flow.png',
+      '/assets/edufams/article/process1.png',
+      '/assets/edufams/article/process2.png',
+      '/assets/edufams/gallery/screen1.webp',
+      '/assets/edufams/gallery/screen2.webp',
+      '/assets/edufams/gallery/screen3.webp',
+      '/assets/edufams/gallery/screen4.webp',
+      '/assets/edufams/gallery/screen5.webp',
+      '/assets/edufams/gallery/screen6.webp',
+      '/assets/edufams/gallery/screen7.webp',
+      '/assets/edufams/gallery/screen8.webp',
+      '/assets/edufams/gallery/screen9.webp',
+      '/assets/edufams/gallery/screen10.webp',
+      '/assets/edufams/gallery/screen11.webp',
+
       '/assets/avatar.png',
       '/assets/document.svg',
       '/assets/bgshowcase/showcase2.png',
       '/assets/bio/sea.mp4',
     ];
 
+    const totalAssets = assetsToLoad.length;
+    const totalProgressSteps = 100;
+    const progressStep = totalProgressSteps / totalAssets;
+
+    let loadedAssets = 0;
+    let currentProgress = 0;
+
+    const updateProgress = () => {
+      loadedAssets++;
+      currentProgress += progressStep;
+      setProgress(Math.floor(currentProgress));
+
+      if (loadedAssets === totalAssets) {
+        setIsAssetsLoading(false);
+      }
+    };
+
+    
     const loadAssets = async () => {
       for (const asset of assetsToLoad) {
         await loadImage(asset);
