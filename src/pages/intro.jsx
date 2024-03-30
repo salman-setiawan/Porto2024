@@ -8,10 +8,11 @@ const IntroPages = () => {
 
   useEffect(() => {
     const loadImage = (src) => {
+      const filename = src.split('/').pop();
       return new Promise((resolve, reject) => {
         const image = new Image();
         image.onload = () => {
-          console.log('dataImage from:\n', src, '\nSuccessfully Loaded'); // Tampilkan pesan log saat gambar dimuat
+          console.log('dataImage from:\n', filename, '\nSuccessfully Loaded'); // Tampilkan pesan log saat gambar dimuat
           resolve();
         };
         image.onerror = (err) => reject(err);
@@ -21,9 +22,10 @@ const IntroPages = () => {
 
     const loadVideo = (src) => {
       return new Promise((resolve, reject) => {
+        const filename = src.split('/').pop();
         const video = document.createElement('video');
         video.oncanplaythrough = () => {
-          console.log('dataVideo from:\n', src, '\nSuccessfully Loaded'); // Tampilkan pesan log saat video dimuat
+          console.log('dataVideo from:\n', filename, '\nSuccessfully Loaded'); // Tampilkan pesan log saat video dimuat
           resolve();
         };
         video.onerror = (err) => reject(err);
@@ -51,7 +53,7 @@ const IntroPages = () => {
     const loadAssets = async () => {
       for (const asset of dataAssets) {
         try {
-          setCurrentAsset(asset);
+          setCurrentAsset(asset.split('/').pop());
           if (asset.endsWith('.webm')) {
             await loadVideo(asset);
           } else {
@@ -79,7 +81,7 @@ const IntroPages = () => {
           <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
           <div className="flex flex-col justify-center items-center space-y-1">
           <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
-          {currentAsset && <p className='text-[10px] md:text-[12px]'>loadProgress:{currentAsset}</p>}
+          {currentAsset && <p className='text-[10px] md:text-[12px]'>onLoad:{currentAsset}</p>}
           </div>
         </div>
       ) : (

@@ -46,7 +46,7 @@ const EdufamsArticle = () => {
             <Paragraph
               desc1={dataParagraph4}
             />
-            <img src="/assets/edufams/article/system.png" alt="" />
+            <img src="/assets/edufams/article/system.jpg" alt="" />
             <Paragraph
               desc1={dataParagraph5}
             />
