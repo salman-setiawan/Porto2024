@@ -96,12 +96,12 @@
 
 @keyframes floatAnimation {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(-3deg);
   }
   50% {
-    transform: translateY(-15px) rotate(7deg);
+    transform: translateY(-15px) rotate(4deg);
   }
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(-3deg);
   }
 }

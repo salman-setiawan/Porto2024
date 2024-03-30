@@ -74,9 +74,9 @@ const IntroPages = () => {
   }, []);
 
   return (
-    <div className="bg-[#171616] min-h-screen flex flex-col justify-center items-center px-8 text-white">
+    <div className="bg-[#171616] min-h-screen w-screen flex flex-col justify-center items-center text-white">
       {isAssetsLoading ? (
-        <div className="flex flex-col justify-center space-y-6 md:space-y-8 items-center md:w-[640px]">
+        <div className="flex flex-col h-screen w-full justify-center space-y-6 md:space-y-8 items-center">
           <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
           <div className="flex flex-col justify-center items-center space-y-1">
             <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
@@ -84,7 +84,7 @@ const IntroPages = () => {
           </div>
         </div>
       ) : (
-        <div className='flex flex-col text-[16px] space-y-6 md:space-y-8 justify-center items-center md:w-[640px]' onClick={() => window.location.href = "/collection"}>
+        <div className='flex flex-col h-screen w-full text-[16px] space-y-6 md:space-y-8 justify-center items-center' onClick={() => window.location.href = "/collection"}>
           <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
           <p className='blinking-text text-[14px] md:text-[16px]'>Click anywhere to continue.</p>
         </div>
