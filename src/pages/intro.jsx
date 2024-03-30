@@ -36,16 +36,16 @@ const IntroPages = () => {
 
     const totalAssets = dataAssets.Intro.length;
     const totalProgressSteps = 100;
-    const progressStep = totalProgressSteps / totalAssets;
+    const progressStep = 100 / totalAssets;
 
     let loadedAssets = 0;
     let currentProgress = 0;
 
     const updateProgress = () => {
+      loadedAssets++;
       currentProgress += progressStep;
       setProgress(Math.floor(currentProgress));
 
-      loadedAssets++;
       if (loadedAssets === totalAssets) {
         setIsAssetsLoading(false);
       }
