@@ -98,11 +98,6 @@ const dataAssets = [
   '/assets/anotherisland/gallery/screen10.webp',
 
   //PROFILE PAGE
-  '/assets/bio/gallery1.webp',
-  '/assets/bio/gallery2.webp',
-  '/assets/bio/gallery3.webp',
-  '/assets/bio/gallery4.webp',
-  '/assets/bio/gallery5.webp',
   '/assets/bio/sea.webm',
 ];
 
