@@ -8,14 +8,14 @@ const SlideNumber = ({current, totalCurrent, subject}) => {
           <p className='text-[12px]'>Drag left or right the image to change slide.</p>
           <p className='text-[12px]'>Click or tap the image to see more details.</p>
         </div>
-        <div className="flex flex-col md:items-end">
+        <div className="flex flex-row md:flex-col justify-between md:items-end pb-1.5 md:pb-0">
           <div className="flex space-x-2 text-[12px]">
             <p className='text-[#B5B5B5]'>Slide</p>
             <p className='text-white font-semibold'>{current}</p>
             <p className='text-[#B5B5B5]'>of</p>
             <p className='text-white font-semibold'>{totalCurrent}</p>
           </div>
-          <p className="text-[12px] text-white font-semibold hidden md:block">{subject}</p>
+          <p className="text-[12px] text-white font-semibold">{subject}</p>
         </div>
       </div>
     </div>

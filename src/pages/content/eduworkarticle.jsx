@@ -1,16 +1,17 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
-import FAB from '../../components/FloatButton'
-import Copyright from '../../components/Copyright'
-import Paragraph from '../../components/Paragraph'
-import Slider from '../../components/Slider'
-import CardStandard from '../../components/cardcontent/CardStandard'
-import CTAGallery from '../../components/CTAGallery'
-import DocumentLink from '../../components/DocumentLink'
-import ArticleData from '../../data/article'
+import React, { useState, useEffect } from 'react';
+import Navbar from '../../components/Navbar';
+import FAB from '../../components/FloatButton';
+import Copyright from '../../components/Copyright';
+import Paragraph from '../../components/Paragraph';
+import Slider from '../../components/Slider';
+import CardStandard from '../../components/cardcontent/CardStandard';
+import CTAGallery from '../../components/CTAGallery';
+import DocumentLink from '../../components/DocumentLink';
+import ArticleData from '../../data/article';
 
 const EduworkArticle = () => {
   const selectedArticle = ArticleData.find(article => article.id === 1);
+  
   const { 
     dataParagraph1, dataParagraph2, dataParagraph3, dataParagraph4, dataParagraph5, dataParagraph6, dataParagraph7, dataParagraph8, dataParagraph9, dataParagraph10, dataSlider1,
   } = selectedArticle;
