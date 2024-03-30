@@ -12,7 +12,7 @@ const IntroPages = () => {
       return new Promise((resolve, reject) => {
         const image = new Image();
         image.onload = () => {
-          console.log('dataImage from:\n', filename, '\nSuccessfully Loaded'); // Tampilkan pesan log saat gambar dimuat
+          console.log('dataImage from:', filename, 'Successfully Loaded'); // Tampilkan pesan log saat gambar dimuat
           resolve();
         };
         image.onerror = (err) => reject(err);
@@ -25,7 +25,7 @@ const IntroPages = () => {
         const filename = src.split('/').pop();
         const video = document.createElement('video');
         video.oncanplaythrough = () => {
-          console.log('dataVideo from:\n', filename, '\nSuccessfully Loaded'); // Tampilkan pesan log saat video dimuat
+          console.log('dataVideo from:', filename, 'Successfully Loaded'); // Tampilkan pesan log saat video dimuat
           resolve();
         };
         video.onerror = (err) => reject(err);
@@ -34,7 +34,7 @@ const IntroPages = () => {
       });
     };
 
-    const totalAssets = dataAssets.length;
+    const totalAssets = dataAssets.Intro.length;
     const totalProgressSteps = 100;
     const progressStep = totalProgressSteps / totalAssets;
 
@@ -51,7 +51,7 @@ const IntroPages = () => {
     };
 
     const loadAssets = async () => {
-      for (const asset of dataAssets) {
+      for (const asset of dataAssets.Intro) {
         try {
           setCurrentAsset(asset.split('/').pop());
           if (asset.endsWith('.webm')) {
@@ -80,8 +80,8 @@ const IntroPages = () => {
         <div className="flex flex-col justify-center space-y-6 md:space-y-8 items-center md:w-[640px]">
           <img src="/icon.svg" alt="" className="h-[64px] md:h-[80px] w-fit" />
           <div className="flex flex-col justify-center items-center space-y-1">
-          <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
-          {currentAsset && <p className='text-[10px] md:text-[12px]'>onLoad:{currentAsset}</p>}
+            <p className='text-[14px] md:text-[16px]'>Loading {progress}%</p>
+            {currentAsset && <p className='text-[10px] md:text-[12px]'>Currently Loading: {currentAsset}</p>}
           </div>
         </div>
       ) : (
