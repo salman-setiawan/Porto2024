@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import dataAssets from '../data/assets';
 import Navbar from '../components/Navbar';
 import Showcase from '../components/Showcase';
 import Tabs from '../components/Tabs';
@@ -10,6 +11,52 @@ import BGVid from '../components/motion/BGVid';
 
 
 const CollectionPages = () => {
+  useEffect(() => {
+    const loadImage = (src) => {
+      const filename = src.split('/').pop();
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => {
+          console.log('dataImage from:', '\n', filename, '\nSuccessfully Loaded');
+          resolve();
+        };
+        image.onerror = (err) => reject(err);
+        image.src = src;
+      });
+    };
+
+    const loadVideo = (src) => {
+      const filename = src.split('/').pop();
+      return new Promise((resolve, reject) => {
+        const video = document.createElement('video');
+        video.oncanplaythrough = () => {
+          console.log('dataVideo from:', '\n', filename, '\nSuccessfully Loaded');
+          resolve();
+        };
+        video.onerror = (err) => reject(err);
+        video.src = src;
+        video.load();
+      });
+    };
+
+    const loadAssets = async () => {
+      for (const asset of dataAssets.Content) {
+        try {
+          if (asset.endsWith('.webm')) {
+            await loadVideo(asset);
+          } else {
+            await loadImage(asset);
+          }
+        } catch (error) {
+          console.error(`Error loading asset: ${asset}`, error);
+          // Handle error loading asset
+        }
+      }
+    };
+
+    loadAssets();
+  }, []);
+
   const [currentSlide, setCurrentSlide] = useState(1);
   const [totalSlides, setTotalSlides] = useState(3);
   const [activeTab, setActiveTab] = useState('Works');
