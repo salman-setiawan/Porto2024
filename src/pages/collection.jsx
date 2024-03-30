@@ -94,6 +94,7 @@ const CollectionPages = () => {
 							title={ShowcaseContent[activeTab][currentSlide - 1].title}
 							desc1={ShowcaseContent[activeTab][currentSlide - 1].desc1}
 							desc2={ShowcaseContent[activeTab][currentSlide - 1].desc2}
+              desc3={ShowcaseContent[activeTab][currentSlide - 1].desc3}
 						/>
           </div>
         </div>

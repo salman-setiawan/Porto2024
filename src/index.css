@@ -105,3 +105,26 @@
     transform: translateY(0) rotate(-3deg);
   }
 }
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Integral';
+  src: url('../src/fonts/integral/integralcf-bold.otf') format('opentype');
+}
+
+.integral {
+  font-family: 'Integral';
+  line-height: 1.2;
+  text-shadow: -5px 6px 0 #ca5400;
+}
+
+@media screen and (max-width: 768px) {
+  .integral {
+    text-shadow: none; /* Nonaktifkan shadow pada tampilan mobile */
+  }
+}
