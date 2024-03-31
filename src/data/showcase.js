@@ -36,7 +36,7 @@ const ShowcaseContent = {
       title: 'Another Day in the Island',
       desc1: 'November 2023',
       desc2: 'Desktop Arcade Game',
-      desc3: 'In July, I had the opportunity to do an internship at Eduwork, a Yogyakarta-based education platform company. Eduwork plans to develop a new platform, specifically a community-based website. As a UI/UX Designer, I had the opportunity to participate in this project.',
+      desc3: 'This project is a simple arcade game with a survival theme called Another Day in the Island, which I designed as research for my final project as a computer science student at the Kalimantan Institute of Technology.',
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const ShowcaseContent = {
       title: 'mobtoon',
       desc1: 'January 2024',
       desc2: 'Comic App',
-      desc3: 'In July, I had the opportunity to do an internship at Eduwork, a Yogyakarta-based education platform company. Eduwork plans to develop a new platform, specifically a community-based website. As a UI/UX Designer, I had the opportunity to participate in this project.',
+      desc3: 'Lately I have been really enjoying reading manhwa (also known as webtoons, Korean comics) of any genre. From my love for manhwa, I thought to myself “why not I create my own manhwa app design”, and here are the results of the design I created.',
     },
   ],
 };
