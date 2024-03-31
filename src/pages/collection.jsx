@@ -12,44 +12,55 @@ import BGVid from '../components/motion/BGVid';
 
 const CollectionPages = () => {
   useEffect(() => {
-    const loadImage = (src) => {
+    const loadImage = async (src) => {
       const filename = src.split('/').pop();
-      return new Promise((resolve, reject) => {
+      try {
+        const cachedStatus = sessionStorage.getItem(filename); // Periksa status cache
+        if (cachedStatus === 'loaded') {
+          console.log('Cached image found for:', filename);
+          return; // Jika sudah dimuat sebelumnya, lewati proses memuat
+        }
+
         const image = new Image();
         image.onload = () => {
           console.log('dataImage from:', '\n', filename, '\nSuccessfully Loaded');
-          resolve();
+          sessionStorage.setItem(filename, 'loaded'); // Tandai sebagai sudah dimuat dan simpan di cache
         };
-        image.onerror = (err) => reject(err);
+        image.onerror = (err) => console.error('Error loading image:', filename, err);
         image.src = src;
-      });
+      } catch (error) {
+        console.error('Error loading image:', filename, error);
+      }
     };
 
-    const loadVideo = (src) => {
+    const loadVideo = async (src) => {
       const filename = src.split('/').pop();
-      return new Promise((resolve, reject) => {
+      try {
+        const cachedStatus = sessionStorage.getItem(filename); // Periksa status cache
+        if (cachedStatus === 'loaded') {
+          console.log('Cached video found for:', filename);
+          return; // Jika sudah dimuat sebelumnya, lewati proses memuat
+        }
+
         const video = document.createElement('video');
         video.oncanplaythrough = () => {
           console.log('dataVideo from:', '\n', filename, '\nSuccessfully Loaded');
-          resolve();
+          sessionStorage.setItem(filename, 'loaded'); // Tandai sebagai sudah dimuat dan simpan di cache
         };
-        video.onerror = (err) => reject(err);
+        video.onerror = (err) => console.error('Error loading video:', filename, err);
         video.src = src;
         video.load();
-      });
+      } catch (error) {
+        console.error('Error loading video:', filename, error);
+      }
     };
 
     const loadAssets = async () => {
       for (const asset of dataAssets.Content) {
-        try {
-          if (asset.endsWith('.webm')) {
-            await loadVideo(asset);
-          } else {
-            await loadImage(asset);
-          }
-        } catch (error) {
-          console.error(`Error loading asset: ${asset}`, error);
-          // Handle error loading asset
+        if (asset.endsWith('.webm')) {
+          await loadVideo(asset);
+        } else {
+          await loadImage(asset);
         }
       }
     };
@@ -82,6 +93,8 @@ const CollectionPages = () => {
 							text1='about me'
 							url2='https://read.cv/eisenflux'
 							text2='read.cv'
+              url3='mailto:salmansetiawan88@gmail.com'
+							text3='mail me'
 						/>
 					</div>
           <div className="fixed top-0 w-full cursonone" style={{ zIndex: 2 }}>

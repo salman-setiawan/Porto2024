@@ -12,20 +12,20 @@ const Tabs = ({ onTabChange }) => {
     <div className='w-full md:w-[440px]'>
       <div className="flex justify-between p-1 bg-[#2b2b45] rounded-lg space-x-2 font-medium">
         <p
-          className={`w-full flex justify-center py-1.5 px-4 rounded-md text-[14px] select ${
+          className={`w-full flex justify-center py-2 px-4 rounded-md text-[14px] integral select ${
             activeTab === 'Works' ? 'bg-[#464672]' : 'bg-[#2b2b45]'
           }`}
           onClick={() => handleTabClick('Works')}
         >
-          Works
+          WORKS
         </p>
         <p
-          className={`w-full flex justify-center py-1.5 px-4 rounded-md text-[14px] select ${
+          className={`w-full flex justify-center py-2 px-4 rounded-md text-[14px] integral select ${
             activeTab === 'Crafts' ? 'bg-[#464672]' : 'bg-[#2b2b45]'
           }`}
           onClick={() => handleTabClick('Crafts')}
         >
-          Crafts
+          CRAFTS
         </p>
       </div>
     </div>

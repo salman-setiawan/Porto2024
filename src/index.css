@@ -118,6 +118,11 @@
 .integral {
   font-family: 'Integral';
   line-height: 1.2;
+}
+
+.sha-integral {
+  font-family: 'Integral';
+  line-height: 1.2;
   text-shadow: -5px 6px 0 #ca5400;
 }
 
