@@ -24,7 +24,7 @@ const ShowcaseContent = {
       url: '/content/duadelapans/articleview',
       title: 'Catalog Book Website',
       desc1: 'CV. Dua Delapan September (Freelance)',
-      desc2: 'Personal Work',
+      desc2: 'Personal Works',
       desc3: "This is a freelance project undertaken by me as a UI/UX designer and one of my colleagues as a full-stack developer. The client requested the design and development of a website for their company's book catalog.",
     },
   ],

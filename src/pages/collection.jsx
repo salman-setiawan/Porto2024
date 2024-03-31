@@ -94,7 +94,7 @@ const CollectionPages = () => {
 							url2='https://read.cv/eisenflux'
 							text2='read.cv'
               url3='mailto:salmansetiawan88@gmail.com'
-							text3='mail me'
+							text3='hire me'
 						/>
 					</div>
           <div className="fixed top-0 w-full cursonone" style={{ zIndex: 2 }}>
