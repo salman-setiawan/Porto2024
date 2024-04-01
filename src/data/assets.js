@@ -2,6 +2,7 @@ const dataAssets = {
   Intro: [
     '/assets/avatar.png',
     '/assets/document.svg',
+    '/src/fonts/integral/integralcf-bold.otf',
   
     //SHOWCASE PAGE
     '/assets/bgshowcase/showcase2.png',

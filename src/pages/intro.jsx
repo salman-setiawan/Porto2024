@@ -34,6 +34,18 @@ const IntroPages = () => {
       });
     };
 
+    const loadFont = (src) => {
+      return new Promise((resolve, reject) => {
+        const filename = src.split('/').pop();
+        const font = new FontFace(filename, `url(${src})`);
+        font.load().then(() => {
+          console.log('dataFont from:', filename, 'Successfully Loaded');
+          document.fonts.add(font);
+          resolve();
+        }).catch(error => reject(error));
+      });
+    };
+
     const totalAssets = dataAssets.Intro.length;
 
     let loadedAssets = 0;
@@ -55,6 +67,8 @@ const IntroPages = () => {
           setCurrentAsset(asset.split('/').pop());
           if (asset.endsWith('.webm')) {
             await loadVideo(asset);
+          } else if (asset.endsWith('.otf')) {
+            await loadFont(asset);
           } else {
             await loadImage(asset);
           }
