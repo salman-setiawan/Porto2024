@@ -37,12 +37,17 @@ const IntroPages = () => {
     const loadFont = (src) => {
       return new Promise((resolve, reject) => {
         const filename = src.split('/').pop();
-        const font = new FontFace(filename, `url(${src})`);
-        font.load().then(() => {
-          console.log('dataFont from:', filename, 'Successfully Loaded');
-          document.fonts.add(font);
-          resolve();
-        }).catch(error => reject(error));
+        fetch(src)
+          .then(response => response.blob())
+          .then(blob => {
+            const font = new FontFace(filename, `url(${URL.createObjectURL(blob)})`);
+            font.load().then(() => {
+              console.log('dataFont from:', filename, 'Successfully Loaded');
+              document.fonts.add(font);
+              resolve();
+            }).catch(error => reject(error));
+          })
+          .catch(error => reject(error));
       });
     };
 
