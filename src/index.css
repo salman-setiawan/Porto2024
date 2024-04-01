@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: 'Integral';
-  src: url('../src/fonts/integral/integralcf-bold.otf') format('opentype');
+  src: url('/public/assets/fonts/integralcf-bold.otf') format('opentype');
 }
 
 .integral {
