@@ -91,8 +91,6 @@ const CollectionPages = () => {
 						<Navbar
 							url1='/bio'
 							text1='about me'
-{/* 							url2='https://read.cv/eisenflux'
-							text2='read.cv' */}
               url3='mailto:salmansetiawan88@gmail.com'
 							text3='hire me'
 						/>
